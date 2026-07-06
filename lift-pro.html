@@ -1,0 +1,1130 @@
+﻿<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERVO Lift Pro - Premium Reguliuojamo Aukščio Stalas | Nuo 190 €</title>
+<meta name="description" content="ERVO Lift Pro: elektrinis reguliavimas 72–118 cm, išmanus LED pultas, 3 atminties pozicijos, 55 dB tylusis variklis. 30 dienų bandymas, 5 m. garantija.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ── REVEAL ── */
+.rev{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rev.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ── SHARED ── */
+.lp-wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,60px)}
+.lp-eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pine);margin-bottom:14px}
+.lp-h2{font-size:clamp(28px,4vw,48px);font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.15;margin-bottom:16px}
+.lp-lead{font-size:clamp(15px,1.8vw,18px);color:var(--stone);line-height:1.65}
+.lp-center{text-align:center}
+.lp-sec{padding:clamp(64px,8vw,120px) 0}
+.lp-btn-g{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:12px;background:linear-gradient(135deg,#1a7a5a,#13b87a);color:#fff;font-size:16px;font-weight:700;border:none;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 24px rgba(26,122,90,.4);font-family:inherit}
+.lp-btn-g:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(26,122,90,.5)}
+.lp-btn-o{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:12px;background:transparent;color:rgba(255,255,255,.8);font-size:16px;font-weight:600;border:1.5px solid rgba(255,255,255,.22);cursor:pointer;text-decoration:none;transition:all .2s;font-family:inherit}
+.lp-btn-o:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.4)}
+
+/* ── 1. HERO ── */
+.lp-hero{background:linear-gradient(135deg,#14130f 0%,#1a1916 55%,#0d3d28 100%);padding:clamp(72px,10vw,110px) 0;position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center}
+.lp-hero::before{content:'';position:absolute;top:-180px;right:-180px;width:580px;height:580px;background:radial-gradient(circle,rgba(26,122,90,.22) 0%,transparent 70%);pointer-events:none}
+.lp-hero::after{content:'';position:absolute;bottom:-100px;left:-80px;width:380px;height:380px;background:radial-gradient(circle,rgba(217,119,6,.09) 0%,transparent 70%);pointer-events:none}
+.lp-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8fd4b8;margin-bottom:18px}
+.hero-tag span{display:inline-block;width:22px;height:2px;background:#8fd4b8}
+.lp-hero h1{font-size:clamp(38px,5.5vw,68px);font-weight:800;color:#fff;letter-spacing:-.025em;line-height:1.08;margin-bottom:18px}
+.lp-hero h1 em{font-style:normal;background:linear-gradient(135deg,#8fd4b8,#13b87a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:clamp(15px,2vw,19px);color:rgba(255,255,255,.6);line-height:1.65;margin-bottom:28px;max-width:460px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
+.hero-badge{display:flex;align-items:center;gap:7px;padding:7px 13px;border-radius:100px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);font-size:12px;color:rgba(255,255,255,.8);font-weight:500;backdrop-filter:blur(8px)}
+.hero-badge svg{color:#8fd4b8;flex-shrink:0}
+.hero-price-row{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.hero-price{font-size:44px;font-weight:800;color:#fff;letter-spacing:-.025em}
+.hero-old{font-size:20px;color:rgba(255,255,255,.32);text-decoration:line-through}
+.hero-save{padding:5px 11px;border-radius:100px;background:linear-gradient(135deg,#dc4f2b,#e8351a);color:#fff;font-size:12px;font-weight:700}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.hero-trust{display:flex;gap:18px;flex-wrap:wrap}
+.hero-trust-item{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.45)}
+.hero-trust-item svg{color:#8fd4b8}
+
+/* Hero visual */
+.hero-img-wrap{position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(145deg,rgba(143,212,184,.1),rgba(26,122,90,.06));border:1px solid rgba(143,212,184,.18);aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.hero-img-wrap img{width:88%;height:88%;object-fit:contain;transition:transform .6s ease}
+.hero-img-wrap:hover img{transform:scale(1.04)}
+.hero-float{position:absolute;background:rgba(20,19,15,.88);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:10px 14px;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.3);white-space:nowrap}
+.hero-float-icon{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#1a7a5a,#13b87a);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hf1{top:8%;left:-36px;animation:flt1 4s ease-in-out infinite}
+.hf2{bottom:10%;right:-28px;animation:flt2 4s ease-in-out infinite}
+@keyframes flt1{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes flt2{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+/* Finish switcher */
+.hero-finish-label{font-size:12px;color:rgba(255,255,255,.5);margin-top:16px;margin-bottom:8px}
+.hero-finishes{display:flex;gap:8px;flex-wrap:wrap}
+.h-fin-btn{width:44px;height:44px;border-radius:10px;border:2px solid rgba(255,255,255,.2);cursor:pointer;transition:all .2s;padding:0}
+.h-fin-btn.active,.h-fin-btn:hover{border-color:#8fd4b8;transform:scale(1.1)}
+
+/* Size switcher */
+.hero-size-label{font-size:12px;color:rgba(255,255,255,.5);margin-top:14px;margin-bottom:8px}
+.hero-sizes{display:flex;gap:8px}
+.h-size-btn{padding:7px 16px;border-radius:8px;border:1.5px solid rgba(255,255,255,.18);background:transparent;color:rgba(255,255,255,.75);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit}
+.h-size-btn.active{border-color:#8fd4b8;background:rgba(143,212,184,.1);color:#8fd4b8}
+
+/* ── 2. PRIVALUMAI ── */
+.lp-ben{background:#f9f8f5}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.ben-card{background:#fff;border-radius:20px;padding:34px 28px;border:1px solid var(--line);transition:all .3s;position:relative;overflow:hidden}
+.ben-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;opacity:0;transition:opacity .3s}
+.ben-card:nth-child(1)::before{background:linear-gradient(90deg,var(--pine),#13b87a)}
+.ben-card:nth-child(2)::before{background:linear-gradient(90deg,var(--amber),#f59e0b)}
+.ben-card:nth-child(3)::before{background:linear-gradient(90deg,var(--coral),#f97316)}
+.ben-card:hover{box-shadow:0 20px 48px rgba(20,19,15,.1);transform:translateY(-4px);border-color:#8fd4b8}
+.ben-card:hover::before{opacity:1}
+.ben-num{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mist);margin-bottom:18px}
+.ben-icon{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.ben-card:nth-child(1) .ben-icon{background:var(--pine-soft)}
+.ben-card:nth-child(1) .ben-icon svg{color:var(--pine)}
+.ben-card:nth-child(2) .ben-icon{background:var(--amber-soft)}
+.ben-card:nth-child(2) .ben-icon svg{color:var(--amber)}
+.ben-card:nth-child(3) .ben-icon{background:var(--coral-soft)}
+.ben-card:nth-child(3) .ben-icon svg{color:var(--coral)}
+.ben-card h3{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.ben-card p{font-size:14px;color:var(--stone);line-height:1.65}
+
+/* ── 3. KODĖL RINKTIS ── */
+.lp-why{background:#fff}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.why-visual{position:relative}
+.why-img-box{background:linear-gradient(145deg,#edf7f3,#d8f2e8);border-radius:24px;padding:40px;border:1px solid #9fd4be;display:flex;align-items:center;justify-content:center;aspect-ratio:4/5}
+.why-img-box img{width:100%;height:100%;object-fit:contain}
+.why-badge{position:absolute;bottom:20px;left:20px;background:linear-gradient(135deg,#0d3d28,#1a7a5a);color:#fff;border-radius:14px;padding:14px 18px;font-size:12px;font-weight:600;box-shadow:0 8px 24px rgba(13,61,40,.35)}
+.why-badge strong{display:block;font-size:24px;font-weight:800;margin-bottom:2px}
+.checklist{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.check-item{display:flex;align-items:flex-start;gap:14px;padding:14px 18px;border-radius:12px;border:1px solid var(--line);transition:all .22s;background:#fff}
+.check-item:hover{border-color:#8fd4b8;background:#f9fefc;transform:translateX(4px)}
+.check-ico{width:28px;height:28px;border-radius:8px;background:var(--pine-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.check-ico svg{color:var(--pine)}
+.check-txt strong{display:block;font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.check-txt span{font-size:12px;color:var(--stone);line-height:1.5}
+
+/* ── 4. AUKŠTIS ── */
+.lp-ht{background:linear-gradient(135deg,#0d3d28 0%,#1a7a5a 60%,#0f5c42 100%);position:relative;overflow:hidden}
+.lp-ht::before{content:'';position:absolute;top:-120px;right:-120px;width:480px;height:480px;background:radial-gradient(circle,rgba(143,212,184,.18),transparent 70%);pointer-events:none}
+.ht-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.ht-content{color:#fff}
+.ht-content .lp-eyebrow{color:#8fd4b8}
+.ht-content .lp-h2{color:#fff}
+.ht-content .lp-lead{color:rgba(255,255,255,.65);margin-bottom:32px}
+.ht-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.ht-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:16px;padding:20px 22px;backdrop-filter:blur(8px)}
+.ht-stat strong{display:block;font-size:34px;font-weight:800;color:#fff;letter-spacing:-.02em;margin-bottom:3px}
+.ht-stat span{font-size:12px;color:rgba(255,255,255,.55)}
+
+/* Height visual bars */
+.ht-visual{display:flex;align-items:flex-end;justify-content:center;gap:28px;height:340px;padding:0 20px}
+.ht-bar{display:flex;flex-direction:column;align-items:center;gap:10px;flex:1;max-width:110px}
+.ht-bar-track{flex:1;width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;position:relative;overflow:hidden}
+.ht-bar-fill{position:absolute;bottom:0;left:0;right:0;border-radius:10px;transition:height 1.4s cubic-bezier(.34,1.56,.64,1)}
+.ht-bar:nth-child(1) .ht-bar-fill{background:linear-gradient(0deg,rgba(143,212,184,.7),rgba(143,212,184,.2));height:62%}
+.ht-bar:nth-child(2) .ht-bar-fill{background:linear-gradient(0deg,rgba(252,211,77,.6),rgba(252,211,77,.15));height:100%}
+.ht-bar-val{font-size:18px;font-weight:800;color:#fff}
+.ht-bar-lbl{font-size:11px;color:rgba(255,255,255,.55);text-align:center;line-height:1.4}
+
+/* ── 5. ERGONOMIKA ── */
+.lp-ergo{background:#f9f8f5}
+.ergo-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
+.ergo-items{display:flex;flex-direction:column;gap:18px;margin-top:28px}
+.ergo-item{display:flex;gap:16px;align-items:flex-start}
+.ergo-num{width:38px;height:38px;border-radius:10px;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ergo-item:nth-child(1) .ergo-num{background:linear-gradient(135deg,#1a7a5a,#13b87a)}
+.ergo-item:nth-child(2) .ergo-num{background:linear-gradient(135deg,var(--amber),#f59e0b)}
+.ergo-item:nth-child(3) .ergo-num{background:linear-gradient(135deg,var(--coral),#f97316)}
+.ergo-item:nth-child(4) .ergo-num{background:linear-gradient(135deg,#7c3aed,#a855f7)}
+.ergo-item:nth-child(5) .ergo-num{background:linear-gradient(135deg,#0ea5e9,#38bdf8)}
+.ergo-txt strong{display:block;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.ergo-txt span{font-size:13px;color:var(--stone);line-height:1.55}
+.ergo-visual{background:linear-gradient(145deg,#edf7f3,#d8f2e8,#f3faf7);border-radius:24px;padding:48px 40px;border:1px solid #9fd4be;text-align:center}
+.ergo-visual img{width:100%;max-width:320px;object-fit:contain}
+.ergo-quote{margin-top:20px;font-size:15px;font-weight:600;color:#0d5235;font-style:italic;line-height:1.55}
+
+/* ── 6. VALDYMO PULTAS ── */
+.lp-ctrl{background:#14130f;position:relative;overflow:hidden}
+.lp-ctrl::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(217,119,6,.07),transparent 60%);pointer-events:none}
+.ctrl-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.ctrl-content .lp-eyebrow{color:#fcd34d}
+.ctrl-content .lp-h2{color:#fff}
+.ctrl-content .lp-lead{color:rgba(255,255,255,.62);margin-bottom:28px}
+.ctrl-feats{display:flex;flex-direction:column;gap:14px}
+.ctrl-feat{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);transition:all .22s}
+.ctrl-feat:hover{background:rgba(255,255,255,.08);border-color:rgba(252,211,77,.18)}
+.ctrl-feat-ico{width:34px;height:34px;border-radius:9px;background:rgba(252,211,77,.11);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ctrl-feat-ico svg{color:#fcd34d}
+.ctrl-feat-txt strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
+.ctrl-feat-txt span{font-size:12px;color:rgba(255,255,255,.45)}
+
+/* Panel mockup */
+.ctrl-visual{display:flex;align-items:center;justify-content:center}
+.panel-mock{background:linear-gradient(145deg,#1c1b18,#242320);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:28px;max-width:280px;width:100%;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+.panel-screen{background:#000;border-radius:10px;padding:18px;text-align:center;margin-bottom:20px;border:1px solid rgba(255,255,255,.08)}
+.panel-display{font-size:54px;font-weight:800;color:#13b87a;letter-spacing:-.02em;text-shadow:0 0 20px rgba(19,184,122,.38);font-variant-numeric:tabular-nums}
+.panel-unit{font-size:15px;color:rgba(19,184,122,.55);font-weight:600}
+.panel-lbl{font-size:10px;color:rgba(255,255,255,.28);letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+.panel-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.panel-btn{aspect-ratio:1;border-radius:9px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:rgba(255,255,255,.65);cursor:default}
+.panel-btn.up{background:rgba(26,122,90,.2);color:#8fd4b8}
+.panel-btn.dn{background:rgba(220,79,43,.14);color:#f9a895}
+.panel-btn.mem{font-size:10px}
+
+/* ── 7. MEDŽIAGOS ── */
+.lp-mat{background:#fff}
+.mat-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.mat-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.mat-card{padding:22px;border-radius:16px;border:1px solid var(--line);transition:all .22s}
+.mat-card:hover{border-color:#8fd4b8;box-shadow:0 8px 24px rgba(26,122,90,.07)}
+.mat-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.mat-card:nth-child(1) .mat-ico{background:var(--pine-soft)}
+.mat-card:nth-child(1) .mat-ico svg{color:var(--pine)}
+.mat-card:nth-child(2) .mat-ico{background:var(--amber-soft)}
+.mat-card:nth-child(2) .mat-ico svg{color:var(--amber)}
+.mat-card:nth-child(3) .mat-ico{background:var(--coral-soft)}
+.mat-card:nth-child(3) .mat-ico svg{color:var(--coral)}
+.mat-card:nth-child(4) .mat-ico{background:#ede9fe}
+.mat-card:nth-child(4) .mat-ico svg{color:#7c3aed}
+.mat-card h4{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.mat-card p{font-size:12px;color:var(--stone);line-height:1.55}
+.mat-visual{background:linear-gradient(145deg,#f9f8f5,#edf7f3);border-radius:24px;padding:48px 32px;border:1px solid var(--line);text-align:center}
+.mat-visual img{width:100%;max-width:340px;object-fit:contain}
+.mat-note{margin-top:20px;font-size:13px;color:var(--stone);line-height:1.55;text-align:left;background:var(--pine-soft);border-radius:10px;padding:14px 16px;border-left:3px solid var(--pine)}
+
+/* ── 8. PRIEDAI ── */
+.lp-acc{background:linear-gradient(135deg,#d8f2e8,#bae8d3,#c8eedd)}
+.acc-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.acc-items{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.acc-item{background:#fff;border-radius:14px;padding:20px 18px;border:1px solid rgba(26,122,90,.13);display:flex;gap:12px;align-items:flex-start;transition:all .22s}
+.acc-item:hover{box-shadow:0 8px 24px rgba(26,122,90,.12);transform:translateY(-2px)}
+.acc-ico{width:36px;height:36px;border-radius:9px;background:var(--pine-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.acc-ico svg{color:var(--pine)}
+.acc-item strong{display:block;font-size:13px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.acc-item span{font-size:11px;color:var(--stone)}
+.acc-visual{background:#fff;border-radius:24px;padding:40px;border:1px solid rgba(26,122,90,.14);text-align:center;box-shadow:0 16px 40px rgba(26,122,90,.1)}
+.acc-visual img{width:100%;max-width:300px;object-fit:contain}
+.acc-tag{margin-top:16px;display:inline-block;background:var(--pine-soft);color:#0d5235;font-size:12px;font-weight:700;padding:6px 14px;border-radius:100px}
+
+/* ── 9. SPEC ── */
+.lp-spec{background:#f9f8f5}
+.spec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.spec-grp{background:#fff;border-radius:20px;padding:28px;border:1px solid var(--line)}
+.spec-grp-title{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pine);margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.spec-grp-title svg{color:var(--pine)}
+.spec-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0ede6;font-size:13px}
+.spec-row:last-child{border-bottom:none;padding-bottom:0}
+.spec-row span:first-child{color:var(--stone)}
+.spec-row span:last-child{font-weight:700;color:var(--ink)}
+
+/* ── 10. DUK ── */
+.lp-faq{background:#fff}
+.faq-list{max-width:740px;margin:44px auto 0;display:flex;flex-direction:column;gap:11px}
+.faq-item{border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .22s}
+.faq-item.open{border-color:#8fd4b8}
+.faq-q{width:100%;padding:18px 22px;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:15px;font-weight:600;color:var(--ink);text-align:left;font-family:inherit;transition:background .18s}
+.faq-q:hover{background:#f9f8f5}
+.faq-item.open .faq-q{background:#f9fefc;color:var(--pine)}
+.faq-ico{width:26px;height:26px;border-radius:7px;background:var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .28s}
+.faq-item.open .faq-ico{background:var(--pine-soft);transform:rotate(45deg)}
+.faq-item.open .faq-ico svg{color:var(--pine)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s ease}
+.faq-a-inner{padding:16px 22px 20px;font-size:14px;color:var(--stone);line-height:1.7;border-top:1px solid var(--line)}
+
+/* ── 11. FINAL CTA ── */
+.lp-final{background:linear-gradient(135deg,#14130f 0%,#1a1916 45%,#0d3d28 100%);padding:clamp(80px,10vw,140px) 0;text-align:center;position:relative;overflow:hidden}
+.lp-final::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:680px;height:680px;background:radial-gradient(circle,rgba(26,122,90,.18),transparent 65%);pointer-events:none}
+.final-inner{position:relative;z-index:1}
+.lp-final h2{font-size:clamp(32px,5vw,58px);font-weight:800;color:#fff;letter-spacing:-.025em;line-height:1.1;margin-bottom:18px}
+.lp-final h2 em{font-style:normal;background:linear-gradient(135deg,#8fd4b8,#13b87a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lp-final p{font-size:clamp(15px,2vw,19px);color:rgba(255,255,255,.55);max-width:520px;margin:0 auto 36px;line-height:1.65}
+.final-price{font-size:clamp(40px,5vw,62px);font-weight:800;color:#fff;letter-spacing:-.03em}
+.final-old{font-size:20px;color:rgba(255,255,255,.28);text-decoration:line-through;display:block;margin-bottom:30px}
+.final-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.final-trust{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
+.final-trust-item{display:flex;align-items:center;gap:6px;font-size:13px;color:rgba(255,255,255,.45)}
+.final-trust-item svg{color:#8fd4b8}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .lp-hero-grid,.why-grid,.ht-grid,.ergo-grid,.ctrl-grid,.mat-grid,.acc-grid{grid-template-columns:1fr;gap:36px}
+  .lp-hero-grid .hero-visual{order:-1}
+  .hf1,.hf2{display:none}
+  .ben-grid{grid-template-columns:1fr}
+  .spec-grid{grid-template-columns:1fr}
+  .mat-cards{grid-template-columns:1fr 1fr}
+  .acc-items{grid-template-columns:1fr 1fr}
+  .why-img-box{aspect-ratio:3/2}
+  .ht-visual{height:220px}
+}
+@media(max-width:600px){
+  .hero-cta{flex-direction:column}
+  .lp-btn-g,.lp-btn-o{width:100%;justify-content:center}
+  .mat-cards{grid-template-columns:1fr}
+  .acc-items{grid-template-columns:1fr}
+  .final-btns{flex-direction:column;align-items:center}
+  .ben-grid{grid-template-columns:1fr}
+  .ht-stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pereiti į turinį</a>
+
+<div class="announce">
+  <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Nemokamas pristatymas visoje Lietuvoje</span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 30 dienų bandymas namuose</span>
+  
+</div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="ERVO pradžia"><img src="naujas%20logo.png" class="logo-img" alt="ERVO" width="114" height="38"></a>
+    <nav class="nav-menu" aria-label="Pagrindinė navigacija">
+      <a href="kedes.html">Ergonominės biuro kėdės</a>
+      <a href="stalai.html">Reguliuojamo aukščio stalai</a>
+      <a href="index.html#kaip-veikia">Kaip veikia</a>
+      <a href="index.html#duk">DUK</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+37065577536" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 13 19.79 19.79 0 0 1 1.77 4.37 2 2 0 0 1 3.74 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.9-.9a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +370 655 77536
+      </a>
+      <a href="stalai.html" class="btn btn-dark nav-cta">Visi stalai</a>
+      <button class="cart-btn" aria-label="Atidaryti krepšelį" onclick="Cart.open()">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="burger" aria-label="Atidaryti meniu" onclick="document.getElementById('mob').classList.add('open')">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mob">
+  <div class="mob-head">
+    <span class="logo"><img src="naujas%20logo.png" class="logo-img" alt="ERVO" width="114" height="38"></span>
+    <button class="mob-close" aria-label="Uždaryti meniu" onclick="document.getElementById('mob').classList.remove('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <a class="mob-link" href="kedes.html">Ergonominės biuro kėdės</a>
+  <a class="mob-link" href="stalai.html">Reguliuojamo aukščio stalai</a>
+  <a class="mob-link" href="index.html#kaip-veikia">Kaip veikia</a>
+  <a class="mob-link" href="index.html#duk">DUK</a>
+  <div class="mob-foot">
+    <a href="tel:+37065577536" class="btn btn-light" style="justify-content:center;">+370 655 77536</a>
+    <a href="stalai.html" class="btn btn-dark" style="justify-content:center;">Visi stalai</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ═══════════════════════════════════════════
+     1. HERO
+═══════════════════════════════════════════ -->
+<section class="lp-hero">
+  <div class="lp-wrap">
+    <div class="lp-hero-grid">
+
+      <!-- Left: copy -->
+      <div class="rev">
+        <div class="hero-tag"><span></span> Premium biuro stalas</div>
+        <h1>Pakilkite aukščiau.<br><em>Dirbkite geriau.</em></h1>
+        <p class="hero-sub">Reguliuojamo aukščio stalas, sukurtas žmonėms, kurie vertina komfortą, ergonomiką ir modernų dizainą. Vienodai puikiai tinka namams ir biurui.</p>
+
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg>
+            72 – 118 cm reguliavimas
+          </span>
+          <span class="hero-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            55 dB tylus variklis
+          </span>
+          <span class="hero-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/></svg>
+            3 atminties pozicijos
+          </span>
+          <span class="hero-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            Iki 70 kg apkrova
+          </span>
+        </div>
+
+        <div class="hero-price-row">
+          <span class="hero-price" id="lpHeroPrice">190 €</span>
+          <span class="hero-old" id="lpHeroOld">299 €</span>
+          <span class="hero-save" id="lpHeroSave">−109 €</span>
+        </div>
+
+        <div class="hero-cta">
+          <button class="lp-btn-g add-cart" id="lpHeroCartBtn" data-id="ervo-lift-pro-natural-small" data-name="ERVO Lift Pro - Natūrali, 60×120" data-price="190" data-img="desk3.png">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Į krepšelį
+          </button>
+          <a href="#lp-spec" class="lp-btn-o">Specifikacijos</a>
+        </div>
+
+        <div class="hero-trust">
+          <span class="hero-trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            Nemokamas pristatymas
+          </span>
+          <span class="hero-trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            30 dienų bandymas
+          </span>
+          <span class="hero-trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            5 m. garantija
+          </span>
+        </div>
+      </div>
+
+      <!-- Right: visual -->
+      <div class="rev d2" style="position:relative">
+        <div class="hero-img-wrap">
+          <img id="lpHeroImg" src="desk3.png" alt="ERVO Lift Pro reguliuojamo aukščio stalas">
+          <div class="hero-float hf1">
+            <div class="hero-float-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg>
+            </div>
+            <div>
+              <div style="font-size:10px;color:rgba(255,255,255,.5);">Aukštis</div>
+              <div>72 – 118 cm</div>
+            </div>
+          </div>
+          <div class="hero-float hf2">
+            <div class="hero-float-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+            <div>
+              <div style="font-size:10px;color:rgba(255,255,255,.5);">Triukšmas</div>
+              <div>Tik 55 dB</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-finish-label">Faktūra: <strong id="lpFinishName" style="color:#8fd4b8;">Natūrali</strong></div>
+        <div class="hero-finishes" id="lpFinishes">
+          <button class="h-fin-btn active" data-color="natural" data-label="Natūrali" data-img="desk3.png" title="Natūrali" style="background:#e8d5b8;"></button>
+          <button class="h-fin-btn" data-color="oak" data-label="Ąžuolas" data-img="desk1.png" title="Ąžuolas" style="background:#d4b896;"></button>
+          <button class="h-fin-btn" data-color="beech" data-label="Buksmedis" data-img="desk2.png" title="Buksmedis" style="background:#c8a87a;"></button>
+          <button class="h-fin-btn" data-color="maple" data-label="Klevas" data-img="desk4.png" title="Klevas" style="background:#b8956a;"></button>
+          <button class="h-fin-btn" data-color="black" data-label="Juoda" data-img="desk black.jpg" title="Juoda" style="background:#1c1b19;"></button>
+        </div>
+
+        <div class="hero-size-label">Dydis: <strong id="lpSizeName" style="color:#8fd4b8;">60×120 cm</strong></div>
+        <div class="hero-sizes" id="lpSizes">
+          <button class="h-size-btn active" data-price="190" data-old="299" data-size="60×120 cm">60×120 cm</button>
+          <button class="h-size-btn" data-price="209" data-old="319" data-size="70×140 cm">70×140 cm</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     2. PAGRINDINIAI PRIVALUMAI
+═══════════════════════════════════════════ -->
+<section class="lp-ben lp-sec">
+  <div class="lp-wrap">
+    <div class="lp-center rev">
+      <span class="lp-eyebrow">Kodėl ERVO Lift Pro?</span>
+      <h2 class="lp-h2">Sukurtas tam, kad dirbtumėte<br>geriau kiekvieną dieną</h2>
+      <p class="lp-lead">Ne tik stalas - tai darbo vietos sprendimas, kuris prisitaiko prie jūsų ritmo.</p>
+    </div>
+    <div class="ben-grid">
+      <div class="ben-card rev d1">
+        <div class="ben-num">01</div>
+        <div class="ben-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg>
+        </div>
+        <h3>Elektrinis aukščio reguliavimas</h3>
+        <p>Nuo sėdimos iki stovimos pozicijos vos per kelias sekundes - vienu mygtuko paspaudimu, be jokių pastangų. Reguliavimo diapazonas 72–118 cm tinka beveik visų ūgių žmonėms.</p>
+      </div>
+      <div class="ben-card rev d2">
+        <div class="ben-num">02</div>
+        <div class="ben-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/></svg>
+        </div>
+        <h3>Išmanus LED valdymo pultas</h3>
+        <p>Tikslus skaitmeninis ekranas realiu laiku rodo stalo aukštį centimetrais. 3 atminties mygtukai - išsaugokite savo mėgstamas pozicijas ir akimirksniu prie jų grįžkite.</p>
+      </div>
+      <div class="ben-card rev d3">
+        <div class="ben-num">03</div>
+        <div class="ben-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Tvirta plieno konstrukcija</h3>
+        <p>Milteliniu būdu dažyto plieno rėmas išlieka stabilus net po tūkstančių aukščio pakeitimų. Jokių klibėjimų, jokių girgždesių - tik tvirtas ir patikimas darbo pagrindas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     3. KODĖL RINKTIS ERVO LIFT PRO
+═══════════════════════════════════════════ -->
+<section class="lp-why lp-sec">
+  <div class="lp-wrap">
+    <div class="why-grid">
+      <div class="why-visual rev">
+        <div class="why-img-box">
+          <img src="desk3.png" alt="ERVO Lift Pro stalas">
+        </div>
+        <div class="why-badge">
+          <strong>5 metai</strong>
+          gamintojo garantija
+        </div>
+      </div>
+      <div class="rev d2">
+        <span class="lp-eyebrow">Jūsų darbo vietos naujasis standartas</span>
+        <h2 class="lp-h2">Kodėl verta rinktis ERVO Lift Pro?</h2>
+        <p class="lp-lead">Kiekviena detalė apgalvota tam, kad jūsų darbo diena būtų patogesnė, produktyvesnė ir sveikatai draugiškesnė.</p>
+        <div class="checklist">
+          <div class="check-item">
+            <div class="check-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-txt">
+              <strong>Elektrinis reguliavimas 72–118 cm</strong>
+              <span>Tinka žmonėms nuo 155 iki 200 cm ūgio - ideali pozicija kiekvienam.</span>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-txt">
+              <strong>3 mėgstamų aukščių atmintis</strong>
+              <span>Vienas paspaudimas - ir stalas automatiškai grįžta į išsaugotą poziciją.</span>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-txt">
+              <strong>Tylus veikimas - tik 55 dB</strong>
+              <span>Mažiau triukšmo nei įprastas pokalbis. Netrikdysite kolegos ar šeimos narių.</span>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-txt">
+              <strong>70 kg maksimali apkrova</strong>
+              <span>Monitoriai, nešiojamas kompiuteris, garsiakalbiai - visa jūsų įranga tilps patogiai.</span>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-txt">
+              <strong>2 universalūs kabliukai įtraukti</strong>
+              <span>Ausinės, kuprinė, rankinė - viskas pasiekiama ir tvarkingai pakabinta.</span>
+            </div>
+          </div>
+          <div class="check-item">
+            <div class="check-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-txt">
+              <strong>Minimalistinis dizainas</strong>
+              <span>Tinka bet kokiam interjero stiliui - moderniems biurams ir namų biurams.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     4. AUKŠČIO REGULIAVIMAS
+═══════════════════════════════════════════ -->
+<section class="lp-ht lp-sec">
+  <div class="lp-wrap">
+    <div class="ht-grid">
+      <div class="ht-content rev">
+        <span class="lp-eyebrow">Aukščio reguliavimas</span>
+        <h2 class="lp-h2">Nuo sėdimos iki stovimos - vos per 18 sekundžių</h2>
+        <p class="lp-lead">Elektrinis variklis sklandžiai pakeičia stalo aukštį tiksliai pagal jūsų poreikius. Nereikia rankinių pastangų - tiesiog paspauskite mygtuką ir stebėkite, kaip stalas prisitaiko.</p>
+        <div class="ht-stats">
+          <div class="ht-stat">
+            <strong>72 cm</strong>
+            <span>Mažiausias aukštis (sėdimoji pozicija)</span>
+          </div>
+          <div class="ht-stat">
+            <strong>118 cm</strong>
+            <span>Didžiausias aukštis (stovimoji pozicija)</span>
+          </div>
+          <div class="ht-stat">
+            <strong>20 mm/s</strong>
+            <span>Kėlimo greitis</span>
+          </div>
+          <div class="ht-stat">
+            <strong>55 dB</strong>
+            <span>Triukšmo lygis - tyliau nei pokalbis</span>
+          </div>
+        </div>
+      </div>
+      <div class="ht-visual rev d2">
+        <div class="ht-bar">
+          <div class="ht-bar-val">72 cm</div>
+          <div class="ht-bar-track" style="height:280px;"><div class="ht-bar-fill"></div></div>
+          <div class="ht-bar-lbl">Sėdimoji<br>pozicija</div>
+        </div>
+        <div class="ht-bar">
+          <div class="ht-bar-val">118 cm</div>
+          <div class="ht-bar-track" style="height:280px;"><div class="ht-bar-fill"></div></div>
+          <div class="ht-bar-lbl">Stovimoji<br>pozicija</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     5. ERGONOMIKA
+═══════════════════════════════════════════ -->
+<section class="lp-ergo lp-sec">
+  <div class="lp-wrap">
+    <div class="ergo-grid">
+      <div class="rev">
+        <span class="lp-eyebrow">Ergonomika ir sveikata</span>
+        <h2 class="lp-h2">Jūsų kūnas nėra sukurtas sėdėti visą dieną</h2>
+        <p class="lp-lead">Reguliarus pozicijų keitimas yra vienas paprasčiausių būdų pagerinti savijautą ir padidinti produktyvumą.</p>
+        <div class="ergo-items">
+          <div class="ergo-item rev d1">
+            <div class="ergo-num">01</div>
+            <div class="ergo-txt">
+              <strong>Sumažina nugaros ir kaklo įtampą</strong>
+              <span>Stovimoji pozicija mažina stuburo apkrovą ir padeda išvengti lėtinių skausmų.</span>
+            </div>
+          </div>
+          <div class="ergo-item rev d2">
+            <div class="ergo-num">02</div>
+            <div class="ergo-txt">
+              <strong>Pagerina kraujotaką</strong>
+              <span>Stovėjimas skatina geresnę kraujotaką kojose ir viso kūno metabolizmą.</span>
+            </div>
+          </div>
+          <div class="ergo-item rev d3">
+            <div class="ergo-num">03</div>
+            <div class="ergo-txt">
+              <strong>Didina energiją ir koncentraciją</strong>
+              <span>Studijos rodo, kad stovint dirbantys žmonės jaučia didesnį budrumą ir dėmesio koncentraciją.</span>
+            </div>
+          </div>
+          <div class="ergo-item rev d4">
+            <div class="ergo-num">04</div>
+            <div class="ergo-txt">
+              <strong>Mažina nuovargį po darbo dienos</strong>
+              <span>Kintanti pozicija sumažina raumenų nuovargį ir padeda jaustis žvalesniam po darbo.</span>
+            </div>
+          </div>
+          <div class="ergo-item rev">
+            <div class="ergo-num">05</div>
+            <div class="ergo-txt">
+              <strong>Skatina judėjimą darbo metu</strong>
+              <span>Net ir nedideli postūrų pokyčiai dienos eigoje prisideda prie aktyvesnio gyvenimo būdo.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ergo-visual rev d2">
+        <img src="desk1.png" alt="Ergonomiškas darbo stalas">
+        <p class="ergo-quote">"Vos per savaitę pajutau skirtumą - nugara nebeskaudėjo, ir darbas vyko sklandžiau."</p>
+        <div style="margin-top:12px;font-size:12px;color:#5a8a72;">- Mindaugas K., klientas iš Vilniaus</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     6. VALDYMO PULTAS
+═══════════════════════════════════════════ -->
+<section class="lp-ctrl lp-sec">
+  <div class="lp-wrap">
+    <div class="ctrl-grid">
+      <div class="ctrl-content rev">
+        <span class="lp-eyebrow">Išmanus valdymas</span>
+        <h2 class="lp-h2" style="color:#fff;">Vienas prisilietimas - tobula pozicija</h2>
+        <p class="lp-lead">Integruotas LED valdymo pultas suteikia tikslų kontrolę be jokio sudėtingumo. Paprastas, intuityvus, tikslus.</p>
+        <div class="ctrl-feats">
+          <div class="ctrl-feat">
+            <div class="ctrl-feat-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="ctrl-feat-txt">
+              <strong>LED ekranas realiu laiku</strong>
+              <span>Tikslus stalo aukščio rodmuo centimetrais kiekvienu metu.</span>
+            </div>
+          </div>
+          <div class="ctrl-feat">
+            <div class="ctrl-feat-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+            </div>
+            <div class="ctrl-feat-txt">
+              <strong>3 atminties pozicijos</strong>
+              <span>Išsaugokite mėgstamiausius aukščius - grįžkite vienu mygtuku.</span>
+            </div>
+          </div>
+          <div class="ctrl-feat">
+            <div class="ctrl-feat-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg>
+            </div>
+            <div class="ctrl-feat-txt">
+              <strong>Vieno prisilietimo valdymas</strong>
+              <span>Aukštyn, žemyn arba tiesiai į išsaugotą poziciją - be jokio laukimo.</span>
+            </div>
+          </div>
+          <div class="ctrl-feat">
+            <div class="ctrl-feat-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="ctrl-feat-txt">
+              <strong>Apsauga nuo perkrovos</strong>
+              <span>Automatinis stabdymas, jei apkrova viršija leistinas ribas.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ctrl-visual rev d2">
+        <div class="panel-mock">
+          <div class="panel-screen">
+            <div class="panel-display" id="panelDisplay">90</div>
+            <div class="panel-unit">cm</div>
+            <div class="panel-lbl">Stalo aukštis</div>
+          </div>
+          <div class="panel-btns">
+            <div class="panel-btn up" id="panelUp">▲</div>
+            <div class="panel-btn dn" id="panelDown">▼</div>
+            <div class="panel-btn mem">M1</div>
+            <div class="panel-btn mem">M2</div>
+            <div class="panel-btn mem" style="grid-column:1/3;">M3</div>
+            <div class="panel-btn" style="grid-column:3/5;font-size:10px;">ATMINTIES<br>ĮRAŠYMAS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     7. MEDŽIAGOS IR KONSTRUKCIJA
+═══════════════════════════════════════════ -->
+<section class="lp-mat lp-sec">
+  <div class="lp-wrap">
+    <div class="mat-grid">
+      <div class="rev">
+        <span class="lp-eyebrow">Kokybė ir ilgaamžiškumas</span>
+        <h2 class="lp-h2">Sukurtas tarnauti dešimtmečius</h2>
+        <p class="lp-lead">Kiekviena ERVO Lift Pro detalė pasirinkta dėl patvarumo, estetikos ir funkcionalumo. Stalas, kuris atrodys ir veiks puikiai dar po daugelio metų.</p>
+        <div class="mat-cards">
+          <div class="mat-card rev d1">
+            <div class="mat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h4>15 mm MDF stalviršis</h4>
+            <p>Lygus, atsparus dėmėms ir įbrėžimams paviršius. Lengvai valomas ir ilgai išlaikantis išvaizdą.</p>
+          </div>
+          <div class="mat-card rev d2">
+            <div class="mat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Plieno rėmas</h4>
+            <p>Milteliniu būdu dažyta plieno konstrukcija - atspari korozijai, atbraižoms ir kasdieniam naudojimui.</p>
+          </div>
+          <div class="mat-card rev d3">
+            <div class="mat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h4>Reguliuojamos kojos</h4>
+            <p>Keturi reguliuojami pėdų atramų aukščiai užtikrina stabilumą net ir ant nelygių grindų.</p>
+          </div>
+          <div class="mat-card rev d4">
+            <div class="mat-ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h4>Tylus variklio blokas</h4>
+            <p>Aukštos kokybės variklis su antivibracijine sistema - ilgas tarnavimo laikas, minimalus triukšmas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mat-visual rev d2">
+        <img src="desk2.png" alt="ERVO Lift Pro konstrukcija">
+        <div class="mat-note">
+          <strong style="color:#0d5235;">Kokybės garantija:</strong> kiekvienas ERVO Lift Pro stalas praeina gamyklinę kokybės patikrą prieš išsiunčiant pirkėjui. 5 metų garantija apima visas mechanines ir elektrines dalis.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     8. PRIEDAI IR KABLIUKAI
+═══════════════════════════════════════════ -->
+<section class="lp-acc lp-sec">
+  <div class="lp-wrap">
+    <div class="acc-grid">
+      <div class="rev">
+        <span class="lp-eyebrow">Komplektacija</span>
+        <h2 class="lp-h2">Smulkmenos, kurias pastebėsite kasdien</h2>
+        <p class="lp-lead">ERVO Lift Pro komplektuojamas su dviem universaliais kabliukais - paprastas sprendimas tvarkingai ir funkcionaliai darbo vietai.</p>
+        <div class="acc-items">
+          <div class="acc-item rev d1">
+            <div class="acc-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <div>
+              <strong>Ausinės</strong>
+              <span>Kabinkite šone arba po stalviršiu</span>
+            </div>
+          </div>
+          <div class="acc-item rev d2">
+            <div class="acc-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Kuprinė</strong>
+              <span>Visada po ranka, neišsipilanti</span>
+            </div>
+          </div>
+          <div class="acc-item rev d3">
+            <div class="acc-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div>
+              <strong>Rankinė</strong>
+              <span>Tvarkinga vieta prie darbo stalo</span>
+            </div>
+          </div>
+          <div class="acc-item rev d4">
+            <div class="acc-ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+            </div>
+            <div>
+              <strong>Kabeliai</strong>
+              <span>Laikykite laidus tvarkingesnius</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="acc-visual rev d2">
+        <img src="desk4.png" alt="ERVO Lift Pro priedai">
+        <div class="acc-tag">✓ 2 kabliukai įtraukti į komplektą</div>
+        <p style="margin-top:14px;font-size:13px;color:var(--stone);line-height:1.6;">Kabliukai tvirtinami prie stalo šono arba po stalviršiu - be jokių įrankių, tiesiog uždedami ir nustumiami.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     9. TECHNINĖS SPECIFIKACIJOS
+═══════════════════════════════════════════ -->
+<section class="lp-spec lp-sec" id="lp-spec">
+  <div class="lp-wrap">
+    <div class="lp-center rev">
+      <span class="lp-eyebrow">Techniniai duomenys</span>
+      <h2 class="lp-h2">Techninės specifikacijos</h2>
+      <p class="lp-lead">Visa, ką reikia žinoti apie ERVO Lift Pro prieš perkant.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec-grp rev d1">
+        <div class="spec-grp-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 3v18"/></svg>
+          Matmenys
+        </div>
+        <div class="spec-row"><span>Plotis</span><span>120 cm</span></div>
+        <div class="spec-row"><span>Gylis</span><span>60 cm</span></div>
+        <div class="spec-row"><span>Min. aukštis</span><span>72 cm</span></div>
+        <div class="spec-row"><span>Maks. aukštis</span><span>118 cm</span></div>
+        <div class="spec-row"><span>Stalviršio storis</span><span>15 mm</span></div>
+      </div>
+      <div class="spec-grp rev d2">
+        <div class="spec-grp-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Svoris ir apkrova
+        </div>
+        <div class="spec-row"><span>Stalo svoris</span><span>18,1 kg</span></div>
+        <div class="spec-row"><span>Maks. apkrova</span><span>70 kg</span></div>
+        <div class="spec-row"><span>Svoris su pakuote</span><span>19,9 kg</span></div>
+      </div>
+      <div class="spec-grp rev d3">
+        <div class="spec-grp-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Elektrinis variklis
+        </div>
+        <div class="spec-row"><span>Kėlimo greitis</span><span>20 mm/s</span></div>
+        <div class="spec-row"><span>Triukšmo lygis</span><span>55 dB</span></div>
+        <div class="spec-row"><span>Maitinimas</span><span>220 V</span></div>
+        <div class="spec-row"><span>Atminties pozicijos</span><span>3 vnt.</span></div>
+      </div>
+      <div class="spec-grp rev d4">
+        <div class="spec-grp-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          Konstrukcija ir pakuotė
+        </div>
+        <div class="spec-row"><span>Stalviršis</span><span>15 mm MDF</span></div>
+        <div class="spec-row"><span>Rėmas</span><span>Dažytas plienas</span></div>
+        <div class="spec-row"><span>Pakuotė</span><span>124 × 33,5 × 16 cm</span></div>
+        <div class="spec-row"><span>Garantija</span><span>5 metai</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     10. DUK
+═══════════════════════════════════════════ -->
+<section class="lp-faq lp-sec">
+  <div class="lp-wrap">
+    <div class="lp-center rev">
+      <span class="lp-eyebrow">Dažni klausimai</span>
+      <h2 class="lp-h2">Turite klausimų?</h2>
+      <p class="lp-lead">Atsakome į dažniausiai pirkėjų užduodamus klausimus apie ERVO Lift Pro.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item rev d1">
+        <button class="faq-q">
+          Kiek laiko užtrunka surinkimas?
+          <span class="faq-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Vidutiniškai 30–45 minutės su dviem žmonėmis. Prie stalo pridedama detalios surinkimo instrukcijos su nuotraukomis. Visi reikalingi įrankiai įtraukti į komplektą.</div></div>
+      </div>
+      <div class="faq-item rev d2">
+        <button class="faq-q">
+          Ar stalas tinka dirbti dviems žmonėms skirtingomis dienomis?
+          <span class="faq-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Taip, tai viena pagrindinių ERVO Lift Pro privalumų. 3 atminties pozicijų funkcija leidžia kiekvienam naudotojui išsaugoti savo mėgstamą aukštį. Persijungimas tarp pozicijų užtrunka tik sekundes.</div></div>
+      </div>
+      <div class="faq-item rev d3">
+        <button class="faq-q">
+          Ar galima naudoti su dviem monitoriais?
+          <span class="faq-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Taip. 70 kg maksimali apkrova ir 120 × 60 cm darbo paviršius leidžia patogiai išdėstyti du monitorius, nešiojamąjį kompiuterį ir kitus darbo reikmenis be jokių apribojimų.</div></div>
+      </div>
+      <div class="faq-item rev d4">
+        <button class="faq-q">
+          Kiek triukšmo kelia variklis keldamas stalą?
+          <span class="faq-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Tik 55 dB - tai mažiau nei įprastas pokalbis (apie 60–65 dB). Variklis veikia tyliai ir sklandžiai, todėl galite keisti stalo aukštį nepajutę daug triukšmo net ir atviroje biuro erdvėje.</div></div>
+      </div>
+      <div class="faq-item rev">
+        <button class="faq-q">
+          Koks yra grąžinimo procesas?
+          <span class="faq-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Siūlome 30 dienų bandymo laikotarpį. Jei per 30 dienų nesate patenkinti pirkinio, galite grąžinti stalą be jokių papildomų klausimų. Grąžinimas nemokamas - mes pasirūpiname surinkimu.</div></div>
+      </div>
+      <div class="faq-item rev">
+        <button class="faq-q">
+          Kokia garantija taikoma?
+          <span class="faq-ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">5 metų gamintojo garantija apima visas mechanines ir elektrines dalis, įskaitant variklį, valdymo pultą ir konstrukciją. Garantija galioja normalaus naudojimo sąlygomis.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     11. GALUTINIS CTA
+═══════════════════════════════════════════ -->
+<section class="lp-final">
+  <div class="lp-wrap">
+    <div class="final-inner rev">
+      <span class="lp-eyebrow" style="color:#8fd4b8;">Jūsų darbo vieta laukia</span>
+      <h2>Pakilkite aukščiau.<br><em>Dirbkite geriau.</em></h2>
+      <p>ERVO Lift Pro - tai ne tik stalas. Tai investicija į produktyvesnį darbą, didesnį komfortą ir geresnę savijautą kiekvieną dieną.</p>
+      <div class="final-price" id="lpFinalPrice">190 €</div>
+      <span class="final-old" id="lpFinalOld">Įprasta kaina 299 €</span>
+      <div class="final-btns">
+        <button class="lp-btn-g add-cart" id="lpFinalCartBtn" data-id="ervo-lift-pro-natural-small" data-name="ERVO Lift Pro - Natūrali, 60×120" data-price="190" data-img="desk3.png">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Pirkti dabar - <span id="lpFinalPriceBtn">190 €</span>
+        </button>
+        <a href="stalai.html" class="lp-btn-o">Peržiūrėti visus stalus</a>
+      </div>
+      <div class="final-trust">
+        <span class="final-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          Nemokamas pristatymas
+        </span>
+        <span class="final-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          30 dienų bandymas namuose
+        </span>
+        <span class="final-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          5 metų garantija
+        </span>
+        <span class="final-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          Grąžinimas nemokamai
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo"><img src="new%20logo.png" class="foot-logo-img" alt="ERVO" width="160" height="54"></div>
+        <p class="foot-about">Premium ergonominės kėdės ir reguliuojamo aukščio stalai, sukurti sveikesnei ir produktyvesnei darbo dienai.</p>
+        <div class="foot-pay"><span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>Dalimis 0%</span></div>
+      </div>
+      <div class="foot-col">
+        <h4>Produktai</h4>
+        <ul>
+          <li><a href="kedes.html">Ergonominės kėdės</a></li>
+          <li><a href="stalai.html">Reguliuojamo aukščio stalai</a></li>
+          <li><a href="lift-pro.html">ERVO Lift Pro</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Pagalba</h4>
+        <ul>
+          <li><a href="index.html#duk">DUK</a></li>
+          <li><a href="tel:+37065577536">+370 655 77536</a></li>
+          <li><a href="mailto:info@ervo.lt">info@ervo.lt</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Pirkimas</h4>
+        <ul>
+          <li><a href="#">Pristatymas</a></li>
+          <li><a href="#">Grąžinimas</a></li>
+          <li><a href="#">Garantija</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 ERVO. Visos teisės saugomos.</span>
+      <span><a href="privatumo-politika.html">Privatumo politika</a> · <a href="pirkimo-taisykles.html">Pirkimo taisyklės</a></span>
+    </div>
+  </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head"><span class="cart-title">Krepšelis</span><button class="cart-close" onclick="Cart.close()">✕</button></div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-foot" id="cartFoot" style="display:none;">
+    <div class="cart-total"><span>Iš viso</span><span id="cartTotal">0 €</span></div>
+    <div class="cart-note"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Nemokamas pristatymas · 30 dienų bandymas</div>
+    <a href="checkout.html" class="btn btn-dark">Apmokėti</a>
+  </div>
+</aside>
+<div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span id="toastMsg">Pridėta į krepšelį</span></div>
+
+<script src="app.js"></script>
+<script>
+(function(){
+
+  // ── Scroll reveal ──
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }});
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+
+  // ── FAQ accordion ──
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-a').style.maxHeight = '0';
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // ── Finish switcher ──
+  const heroImg   = document.getElementById('lpHeroImg');
+  const finishName= document.getElementById('lpFinishName');
+  const heroBtns  = document.querySelectorAll('#lpFinishes .h-fin-btn');
+  let curFinish   = { label:'Natūrali', img:'desk3.png', color:'natural' };
+
+  function setFinish(btn){
+    curFinish = { label: btn.dataset.label, img: btn.dataset.img, color: btn.dataset.color };
+    heroImg.src = curFinish.img;
+    finishName.textContent = curFinish.label;
+    heroBtns.forEach(b => b.classList.toggle('active', b === btn));
+    updateCart();
+  }
+  heroBtns.forEach(b => b.addEventListener('click', () => setFinish(b)));
+
+  // ── Size switcher ──
+  const sizeBtns   = document.querySelectorAll('#lpSizes .h-size-btn');
+  const heroPrice  = document.getElementById('lpHeroPrice');
+  const heroOld    = document.getElementById('lpHeroOld');
+  const heroSave   = document.getElementById('lpHeroSave');
+  const sizeName   = document.getElementById('lpSizeName');
+  const finalPrice = document.getElementById('lpFinalPrice');
+  const finalOld   = document.getElementById('lpFinalOld');
+  const finalPrBtn = document.getElementById('lpFinalPriceBtn');
+  let curPrice = 190, curSize = '60×120 cm';
+
+  function setSize(btn){
+    curPrice = parseInt(btn.dataset.price);
+    const old = parseInt(btn.dataset.old);
+    curSize = btn.dataset.size;
+    heroPrice.textContent = curPrice + ' €';
+    heroOld.textContent   = old + ' €';
+    heroSave.textContent  = '−' + (old - curPrice) + ' €';
+    sizeName.textContent  = curSize;
+    finalPrice.textContent= curPrice + ' €';
+    finalOld.textContent  = 'Įprasta kaina ' + old + ' €';
+    finalPrBtn.textContent= curPrice + ' €';
+    sizeBtns.forEach(b => b.classList.toggle('active', b === btn));
+    updateCart();
+  }
+  sizeBtns.forEach(b => b.addEventListener('click', () => setSize(b)));
+
+  function updateCart(){
+    const id   = 'ervo-lift-pro-' + curFinish.color + '-' + (curSize === '60×120 cm' ? 'small' : 'large');
+    const name = 'ERVO Lift Pro - ' + curFinish.label + ', ' + curSize;
+    ['lpHeroCartBtn','lpFinalCartBtn'].forEach(btnId => {
+      const el = document.getElementById(btnId);
+      if(el){ el.dataset.id = id; el.dataset.name = name; el.dataset.price = curPrice; el.dataset.img = curFinish.img; }
+    });
+  }
+
+  // ── Panel demo animation ──
+  const display = document.getElementById('panelDisplay');
+  const upBtn   = document.getElementById('panelUp');
+  const dnBtn   = document.getElementById('panelDown');
+  if(display && upBtn && dnBtn){
+    let h = 90;
+    upBtn.style.cursor = 'pointer';
+    dnBtn.style.cursor = 'pointer';
+    upBtn.addEventListener('click', () => { if(h < 118){ h = Math.min(118, h+2); display.textContent = h; }});
+    dnBtn.addEventListener('click', () => { if(h > 72){ h = Math.max(72, h-2); display.textContent = h; }});
+  }
+
+})();
+</script>
+</body>
+</html>
+
+
+
+
+

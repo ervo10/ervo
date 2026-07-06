@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd.exe /c \"netstat -ano | findstr :3456\")",
+      "Bash(cmd.exe /c \"netsh interface ipv4 show excludedportrange protocol=tcp\")",
+      "Bash(powershell.exe -Command \"netsh interface ipv4 show excludedportrange protocol=tcp\")",
+      "Bash(sed -i 's/3456/8080/g' \"/c/Users/pauli/venti-serve.ps1\")",
+      "Bash(curl -s --max-time 3 http://localhost:8080/)",
+      "Bash(curl -s --max-time 4 http://localhost:8080/)",
+      "Bash(sed -n '85,562p' index.html)",
+      "Bash(sed -n '1271,1389p' index.html)",
+      "Bash(sed -i '1270,1390c\\\\<script src=\"app.js\"></script>' index.html)",
+      "Bash(sed -i '84,563c\\\\<link rel=\"stylesheet\" href=\"styles.css\">' index.html)",
+      "Bash(grep -iE \"\\\\.\\(jpg|jpeg|png|webp|avif|gif\\)$\")",
+      "Bash(curl -sI --max-time 5 http://localhost:8080/smart.png)",
+      "Bash(curl -sI --max-time 5 http://localhost:8080/grey.png)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\pauli\\\\Desktop\\\\claude kedes\\\\\" | Where-Object { $_.Name -match '^desk' } | Select-Object Name)",
+      "Bash(perl -C -0pi -e 's/kad dirbumėte geriau/kad dirbtumėte geriau/g; s/jokių riksmų/jokių girgždesių/g; s/namų kanceliarijoms/namų biurams/g; s/Nei\\\\x{00AD}?trikdysite/Netrikdysite/g; s/Neištrikdysite/Netrikdysite/g' lift-pro.html)",
+      "Bash(perl -0pi -e 's/kad dirbumėte geriau/kad dirbtumėte geriau/g; s/jokių riksmų/jokių girgždesių/g; s/namų kanceliarijoms/namų biurams/g' lift-pro.html)",
+      "Bash(grep -aoP \"N\\\\S{0,4}trikdysite \\\\S+ \\\\S+ \\\\S+ \\\\S+\" lift-pro.html)",
+      "Bash(perl -0pi -e 's/kad dirbumėte/kad dirbtumėte/g; s/Nei\\\\xc5\\\\xa1\\\\xc2\\\\xadtrikdysite/Netrikdysite/g; s/Nei\\\\xc5\\\\xa1trikdysite/Netrikdysite/g' lift-pro.html)",
+      "Bash(perl -0pi -e ' *)",
+      "Bash(perl -0pi -e 's/Vilniuje pristatome per 1–2 darbo dienas, visoje Lietuvoje - per 2–4 darbo dienas/Klaipėdoje pristatome tą pačią dieną, visoje Lietuvoje - per 2–4 darbo dienas/g' index.html)"
+    ]
+  }
+}

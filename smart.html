@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERVO Smart Aria - išmani ergonominė kėdė</title>
+<meta name="description" content="ERVO Smart Aria - išmani ergonominė biuro kėdė su laikysenos jutikliais, priminimais atsitiesti ir sėdėjimo įpročių sekimu per programėlę. 30 dienų bandymas, 5 metų garantija.">
+<link rel="canonical" href="https://ervo.lt/smart.html">
+<meta name="theme-color" content="#14130f">
+<meta property="og:title" content="ERVO Smart Aria - išmani ergonominė kėdė">
+<meta property="og:description" content="Ergonomika, kuri rūpinasi jumis automatiškai. Laikysenos jutikliai, priminimai, programėlė.">
+<meta property="og:image" content="https://ervo.lt/smart.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://elevoralt.lovable.app">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ERVO Smart Aria išmani ergonominė kėdė",
+  "image": ["https://ervo.lt/smart.png","https://ervo.lt/smart2.png","https://ervo.lt/smart3.png"],
+  "description": "Išmani ergonominė biuro kėdė su laikysenos jutikliais, priminimais atsitiesti ir sėdėjimo įpročių sekimu per programėlę.",
+  "brand": { "@type": "Brand", "name": "ERVO" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "47" },
+  "offers": { "@type": "Offer", "price": "1299", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pereiti į turinį</a>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce">
+  <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Nemokamas pristatymas visoje Lietuvoje</span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 30 dienų bandymas namuose</span>
+  
+</div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="ERVO pradžia"><img src="naujas%20logo.png" class="logo-img" alt="ERVO" width="114" height="38"></a>
+    <nav class="nav-menu" aria-label="Pagrindinė navigacija">
+      <a href="kedes.html">Ergonominės biuro kėdės</a>
+      <a href="stalai.html">Reguliuojamo aukščio stalai</a>
+      <a href="index.html#kaip-veikia">Kaip veikia</a>
+      <a href="index.html#duk">DUK</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+37065577536" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 13 19.79 19.79 0 0 1 1.77 4.37 2 2 0 0 1 3.74 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.9-.9a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +370 655 77536
+      </a>
+      <a href="kedes.html" class="btn btn-dark nav-cta">Visos kėdės</a>
+      <button class="cart-btn" aria-label="Atidaryti krepšelį" onclick="Cart.open()">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="burger" aria-label="Atidaryti meniu" onclick="document.getElementById('mob').classList.add('open')">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mob">
+  <div class="mob-head">
+    <span class="logo"><img src="naujas%20logo.png" class="logo-img" alt="ERVO" width="114" height="38"></span>
+    <button class="mob-close" aria-label="Uždaryti meniu" onclick="document.getElementById('mob').classList.remove('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <a class="mob-link" href="kedes.html">Ergonominės biuro kėdės</a>
+  <a class="mob-link" href="stalai.html">Reguliuojamo aukščio stalai</a>
+  <a class="mob-link" href="index.html#kaip-veikia">Kaip veikia</a>
+  <a class="mob-link" href="index.html#duk">DUK</a>
+  <div class="mob-foot">
+    <a href="tel:+37065577536" class="btn btn-light" style="justify-content:center;">+370 655 77536</a>
+    <a href="kedes.html" class="btn btn-dark" style="justify-content:center;">Visos kėdės</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="catalog" style="padding-top: clamp(32px,4vw,52px);">
+  <div class="wrap">
+    <div class="crumbs" style="font-size:13px; color:var(--mist); margin-bottom:26px;"><a href="index.html" style="color:var(--stone);">Pradžia</a> / <a href="kedes.html" style="color:var(--stone);">Kėdės</a> / ERVO Smart Aria</div>
+    <div class="spotlight-grid">
+
+      <!-- GALLERY -->
+      <div class="gallery">
+        <div class="gallery-main">
+          <img id="galleryMain" src="smart.png" alt="ERVO Smart Aria išmani ergonominė kėdė" width="800" height="800">
+        </div>
+        <div class="gallery-thumbs">
+          <button class="thumb active" data-img="smart.png" aria-label="Nuotrauka 1"><img src="smart.png" alt="ERVO Smart Aria, vaizdas 1" loading="lazy"></button>
+          <button class="thumb" data-img="smart2.png" aria-label="Nuotrauka 2"><img src="smart2.png" alt="ERVO Smart Aria, vaizdas 2" loading="lazy"></button>
+          <button class="thumb" data-img="smart3.png" aria-label="Nuotrauka 3"><img src="smart3.png" alt="ERVO Smart Aria, vaizdas 3" loading="lazy"></button>
+          <button class="thumb" data-img="smart4.png" aria-label="Nuotrauka 4"><img src="smart4.png" alt="ERVO Smart Aria, vaizdas 4" loading="lazy"></button>
+          <button class="thumb" data-img="smart5.png" aria-label="Nuotrauka 5"><img src="smart5.png" alt="ERVO Smart Aria, vaizdas 5" loading="lazy"></button>
+          <button class="thumb" data-img="smart6.png" aria-label="Nuotrauka 6"><img src="smart6.png" alt="ERVO Smart Aria, vaizdas 6" loading="lazy"></button>
+          <button class="thumb" data-img="de.png" aria-label="Papildoma 1"><img src="de.png" alt="ERVO papildoma nuotrauka 1" loading="lazy"></button>
+          <button class="thumb" data-img="de2.png" aria-label="Papildoma 2"><img src="de2.png" alt="ERVO papildoma nuotrauka 2" loading="lazy"></button>
+          <button class="thumb" data-img="de3.png" aria-label="Papildoma 3"><img src="de3.png" alt="ERVO papildoma nuotrauka 3" loading="lazy"></button>
+          <button class="thumb" data-img="de4.png" aria-label="Papildoma 4"><img src="de4.png" alt="ERVO papildoma nuotrauka 4" loading="lazy"></button>
+          <button class="thumb" data-img="de5.png" aria-label="Papildoma 5"><img src="de5.png" alt="ERVO papildoma nuotrauka 5" loading="lazy"></button>
+          <button class="thumb" data-img="de6.png" aria-label="Papildoma 6"><img src="de6.png" alt="ERVO papildoma nuotrauka 6" loading="lazy"></button>
+          <button class="thumb" data-img="de7.png" aria-label="Papildoma 7"><img src="de7.png" alt="ERVO papildoma nuotrauka 7" loading="lazy"></button>
+          <button class="thumb" data-img="de8.png" aria-label="Papildoma 8"><img src="de8.png" alt="ERVO papildoma nuotrauka 8" loading="lazy"></button>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="spotlight">
+        <span class="pd-badge new">Naujiena</span>
+        <span class="eyebrow" style="margin-top:12px;">Išmani · Ergonominė kėdė</span>
+        <h1 class="h2" style="margin-top:10px;">ERVO Smart Aria</h1>
+        <div style="display:flex; align-items:center; gap:8px; margin-top:12px; font-size:14px; color:var(--stone);"><span class="stars" style="color:#f0a814; letter-spacing:1px;">★★★★★</span> 5.0 · 47 atsiliepimai</div>
+        <p class="lead" style="margin-top:16px;">Ergonomika, kuri rūpinasi jumis automatiškai. Jutikliai seka jūsų laikyseną ir sėdėjimo laiką, o programėlė švelniai primena judėti - kad sveiki įpročiai susiformuotų savaime.</p>
+        <div class="spotlight-benefits">
+          <div class="sb-row">
+            <span class="sb-check"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            <span class="sb-text"><strong>Laikysenos jutikliai</strong><span>Kėdė pajunta, kai susmunkate, ir švelniai primena atsitiesti - realiu laiku.</span></span>
+          </div>
+          <div class="sb-row">
+            <span class="sb-check"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            <span class="sb-text"><strong>Programėlė su įpročių statistika</strong><span>Matykite, kiek sėdėjote ir judėjote, gaukite personalizuotus priminimus pertraukoms.</span></span>
+          </div>
+          <div class="sb-row">
+            <span class="sb-check"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
+            <span class="sb-text"><strong>Visa Pro Premium ergonomika</strong><span>Reguliuojama juosmens atrama, 4D porankiai ir kvėpuojantis tinklelis - kaip standarte.</span></span>
+          </div>
+        </div>
+        <div class="spec-chips">
+          <span class="spec-chip"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 3v18"/></svg> Tinka 155–200 cm ūgiui</span>
+          <span class="spec-chip"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10l7-7 7 7"/></svg> Iki 150 kg</span>
+          <span class="spec-chip"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Įkraunama baterija</span>
+        </div>
+        <!-- PRICE -->
+        <div style="display:flex;align-items:center;gap:8px;margin-top:14px;margin-bottom:2px;"><span style="width:8px;height:8px;border-radius:50%;background:#16a34a;display:inline-block;"></span><span style="font-size:13px;color:#16a34a;font-weight:600;">Yra sandėlyje</span><span style="font-size:13px;color:#6b6759;">· Liko tik <strong>7 vnt.</strong></span></div>
+        <div class="price-row" style="margin-top:22px;">
+          <span class="price-now" style="font-size:34px;">1 299 €</span>
+          <span class="price-old">1 599 €</span>
+          <span class="price-save">Sutaupote 200 €</span>
+        </div>
+
+        <div class="spotlight-buy" style="margin-top:20px;">
+          <button class="btn btn-dark add-cart" style="flex:1; justify-content:center;" data-id="smart" data-name="ERVO Smart Aria" data-price="1299" data-img="smart.png">Į krepšelį <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </div>
+        <div style="display:flex; gap:18px; margin-top:14px; font-size:13px; color:var(--stone);">
+          <span style="display:flex; align-items:center; gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Nemokamas pristatymas</span>
+          <span style="display:flex; align-items:center; gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 30 dienų bandymas</span>
+          <span style="display:flex; align-items:center; gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 5 m. garantija</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SMART ARIA APRAŠYMAS ═══ -->
+
+<!-- 5 pardavimo blokai -->
+<section style="padding:clamp(48px,6vw,80px) 0;background:#f9f8f5;">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:40px;">
+      <h2 style="font-size:clamp(22px,3vw,34px);font-weight:800;color:var(--ink);letter-spacing:-.02em;">Kodėl ERVO Smart Aria - kitokia?</h2>
+      <p style="font-size:16px;color:var(--stone);margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto;">Tai ne tik biuro kėdė. Tai aktyvi ergonominė sistema.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;">
+      <div style="background:#fff;border-radius:16px;border:1px solid var(--line);padding:24px 16px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:12px;">🧠</div>
+        <h4 style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3;">Išmanus juosmens palaikymas</h4>
+        <p style="font-size:12px;color:var(--stone);line-height:1.5;">Realiu laiku prisitaiko prie jūsų stuburo</p>
+      </div>
+      <div style="background:#fff;border-radius:16px;border:1px solid var(--line);padding:24px 16px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:12px;">❄️</div>
+        <h4 style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3;">Integruotas vėsinimas</h4>
+        <p style="font-size:12px;color:var(--stone);line-height:1.5;">Dviguba ventiliacijos sistema karštoms dienoms</p>
+      </div>
+      <div style="background:#fff;border-radius:16px;border:1px solid var(--line);padding:24px 16px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:12px;">💆</div>
+        <h4 style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3;">Masažo ir šildymo funkcija</h4>
+        <p style="font-size:12px;color:var(--stone);line-height:1.5;">Atsipalaiduokite po ilgos darbo dienos</p>
+      </div>
+      <div style="background:#fff;border-radius:16px;border:1px solid var(--line);padding:24px 16px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:12px;">🦴</div>
+        <h4 style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3;">Ergonominis stuburo palaikymas</h4>
+        <p style="font-size:12px;color:var(--stone);line-height:1.5;">Palaiko kiekvieną sėdėjimo poziciją</p>
+      </div>
+      <div style="background:#fff;border-radius:16px;border:1px solid var(--line);padding:24px 16px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:12px;">🛡️</div>
+        <h4 style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3;">5 metų garantija</h4>
+        <p style="font-size:12px;color:var(--stone);line-height:1.5;">BIFMA sertifikuota kokybė</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature 1: Išmanus juosmens palaikymas -->
+<section style="padding:clamp(56px,7vw,90px) 0;background:#fff;overflow:hidden;">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;">
+      <div>
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pine);margin-bottom:16px;">01 - Išmanus palaikymas</span>
+        <h2 style="font-size:clamp(24px,3.5vw,38px);font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.2;margin-bottom:16px;">Kėdė prisitaiko prie jūsų, o ne jūs prie kėdės</h2>
+        <p style="font-size:16px;color:var(--stone);line-height:1.7;margin-bottom:20px;">Pažangi juosmens atramos sistema realiu laiku prisitaiko prie jūsų kūno padėties ir stuburo linkio, užtikrindama nuolatinį ir tikslų palaikymą visos dienos metu.</p>
+        <p style="font-size:15px;color:var(--stone);line-height:1.7;margin-bottom:24px;">Daugiau nereikia nuolat reguliuoti kėdės rankiniu būdu - ji automatiškai prisitaiko prie jūsų sėdėjimo pozicijos.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:var(--pine-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Automatiškai prisitaikanti juosmens atrama</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:var(--pine-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Ergonomiškas visos nugaros palaikymas</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:var(--pine-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Padeda sumažinti nugaros nuovargį ir įtampą</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:var(--pine-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--pine)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Prisitaiko prie skirtingų kūno tipų</div>
+        </div>
+      </div>
+      <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:#f0ede6;">
+        <img src="smart2.png" alt="ERVO Smart Aria išmanus juosmens palaikymas" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature 2: Vėsinimas + Masažas -->
+<section style="padding:clamp(56px,7vw,90px) 0;background:#f9f8f5;overflow:hidden;">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;">
+      <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:#e8e6e0;">
+        <img src="smart3.png" alt="ERVO Smart Aria vėsinimo sistema" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+      </div>
+      <div>
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0ea5e9;margin-bottom:16px;">02 - Vėsinimas ir masažas</span>
+        <h2 style="font-size:clamp(24px,3.5vw,38px);font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.2;margin-bottom:16px;">Vėsuma ir atsipalaidavimas vienoje kėdėje</h2>
+        <p style="font-size:16px;color:var(--stone);line-height:1.7;margin-bottom:16px;"><strong style="color:var(--ink);">Vėsinimo sistema:</strong> Integruota dviguba ventiliavimo sistema užtikrina nuolatinį oro srautą ir padeda išlikti vėsiems net ilgos darbo dienos metu. Kvėpuojančios medžiagos leidžia orui laisvai cirkuliuoti.</p>
+        <p style="font-size:16px;color:var(--stone);line-height:1.7;margin-bottom:24px;"><strong style="color:var(--ink);">Masažo ir šildymo funkcija:</strong> Integruota sistema suteikia papildomo komforto ir padeda atsipalaiduoti po ilgos darbo dienos.</p>
+        <div style="background:#fff;border-radius:14px;padding:18px;border:1px solid var(--line);">
+          <p style="font-size:13px;font-weight:600;color:var(--ink);margin-bottom:10px;">Puikiai tinka:</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--stone);">💻 Ilgam darbui prie kompiuterio</div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--stone);">😴 Poilsiui</div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--stone);">🎬 Filmų žiūrėjimui</div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--stone);">☕ Pertraukėlėms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature 3: Atlošo kampai -->
+<section style="padding:clamp(56px,7vw,90px) 0;background:#fff;overflow:hidden;">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;">
+      <div>
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:16px;">03 - Ergonomika judėjime</span>
+        <h2 style="font-size:clamp(24px,3.5vw,38px);font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.2;margin-bottom:24px;">Ergonomika, kuri juda kartu su jumis</h2>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;background:#f9f8f5;border-radius:14px;">
+            <div style="min-width:52px;text-align:center;font-size:22px;font-weight:800;color:var(--pine);">105°</div>
+            <div><p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px;">Darbo pozicija</p><p style="font-size:13px;color:var(--stone);line-height:1.5;">Maksimali koncentracija ir produktyvus darbas.</p></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;background:#f9f8f5;border-radius:14px;">
+            <div style="min-width:52px;text-align:center;font-size:22px;font-weight:800;color:var(--amber);">116°</div>
+            <div><p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px;">Komforto pozicija</p><p style="font-size:13px;color:var(--stone);line-height:1.5;">Idealus balansas tarp komforto ir darbo.</p></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;background:#f9f8f5;border-radius:14px;">
+            <div style="min-width:52px;text-align:center;font-size:22px;font-weight:800;color:var(--coral);">128°</div>
+            <div><p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px;">Poilsio režimas</p><p style="font-size:13px;color:var(--stone);line-height:1.5;">Poilsio ir atsipalaidavimo režimas.</p></div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;background:#f9f8f5;border-radius:14px;">
+            <div style="min-width:52px;text-align:center;font-size:22px;font-weight:800;color:#7c3aed;">140°</div>
+            <div><p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px;">Gilus poilsis</p><p style="font-size:13px;color:var(--stone);line-height:1.5;">Gilus poilsis ir visiškas atsipalaidavimas.</p></div>
+          </div>
+        </div>
+      </div>
+      <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:#f0ede6;">
+        <img src="smart4.png" alt="ERVO Smart Aria atlošo kampai" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature 4: Reguliavimas + Konstrukcija -->
+<section style="padding:clamp(56px,7vw,90px) 0;background:#f9f8f5;overflow:hidden;">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;">
+      <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:#e8e6e0;">
+        <img src="smart5.png" alt="ERVO Smart Aria reguliavimas" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+      </div>
+      <div>
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7c3aed;margin-bottom:16px;">04 - Reguliavimas</span>
+        <h2 style="font-size:clamp(24px,3.5vw,38px);font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1.2;margin-bottom:16px;">Visiškai reguliuojama pagal jūsų poreikius</h2>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Reguliuojama juosmens atrama</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>4D galvos atrama</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>720° reguliuojami porankiai</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Reguliuojamas sėdynės aukštis</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Reguliuojamas sėdynės gylis</div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink);font-weight:500;"><span style="width:28px;height:28px;border-radius:8px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Prisitaiko prie skirtingų sėdėjimo pozicijų</div>
+        </div>
+        <div style="background:#fff;border-radius:14px;border:1px solid var(--line);padding:20px;">
+          <p style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-bottom:14px;">Sukurta ilgam</p>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:var(--stone);">Rėmas</span><span style="font-weight:700;color:var(--ink);">Aliuminio lydinys</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;border-top:1px solid #f0ede6;padding-top:8px;"><span style="color:var(--stone);">Pagrindas</span><span style="font-weight:700;color:var(--ink);">Nerūdijantis plienas</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;border-top:1px solid #f0ede6;padding-top:8px;"><span style="color:var(--stone);">Maks. apkrova</span><span style="font-weight:700;color:var(--ink);">150 kg</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;border-top:1px solid #f0ede6;padding-top:8px;"><span style="color:var(--stone);">Tinkamas ūgis</span><span style="font-weight:700;color:var(--ink);">155–200 cm</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;border-top:1px solid #f0ede6;padding-top:8px;"><span style="color:var(--stone);">Garantija</span><span style="font-weight:700;color:var(--pine);">5 metai ✓</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;border-top:1px solid #f0ede6;padding-top:8px;"><span style="color:var(--stone);">Sertifikatas</span><span style="font-weight:700;color:var(--ink);">BIFMA</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Atsiliepimai -->
+<section style="padding:clamp(40px,5vw,64px) 0;background:#fff;">
+  <div class="wrap" style="max-width:900px;">
+    <h3 style="font-size:18px;font-weight:800;color:var(--ink);margin-bottom:20px;text-align:center;">Ką sako ERVO Smart Aria naudotojai</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:40px;">
+      <div style="background:#f9f8f5;border-radius:16px;border:1px solid var(--line);padding:22px;">
+        <div style="color:#f0a814;font-size:15px;margin-bottom:10px;">★★★★★</div>
+        <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:14px;">"Masažo funkcija - tai kas mane labiausiai nustebino. Po valandos darbo 10 minučių masažas, ir nugara vėl šviežia. Sugrįžti prie paprastos kėdės nebeįsivaizduoju."</p>
+        <div style="font-size:13px;font-weight:600;color:var(--stone);">Edvardas G. · Verslininkas, 47 m.</div>
+      </div>
+      <div style="background:#f9f8f5;border-radius:16px;border:1px solid var(--line);padding:22px;">
+        <div style="color:#f0a814;font-size:15px;margin-bottom:10px;">★★★★★</div>
+        <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:14px;">"Vasarą biure karšta. Vėsinimo sistema tikrai veikia - nugara nebeskauda nuo šiluminės įtampos. Neįtikėtina, kad tokia funkcija iš viso egzistuoja kėdėje."</p>
+        <div style="font-size:13px;font-weight:600;color:var(--stone);">Simona R. · Finansų analitikė, 32 m.</div>
+      </div>
+      <div style="background:#f9f8f5;border-radius:16px;border:1px solid var(--line);padding:22px;">
+        <div style="color:#f0a814;font-size:15px;margin-bottom:10px;">★★★★★</div>
+        <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:14px;">"Automatinis juosmens palaikymas - tai jauti iš karto. Anksčiau po pietų pradėdavau krypti. Dabar sėdžiu tiesiai net nepagalvodamas. Kaina aukšta, bet pateisinama."</p>
+        <div style="font-size:13px;font-weight:600;color:var(--stone);">Darius K. · Marketingo vadovas, 39 m.</div>
+      </div>
+      <div style="background:#f9f8f5;border-radius:16px;border:1px solid var(--line);padding:22px;">
+        <div style="color:#f0a814;font-size:15px;margin-bottom:10px;">★★★★★</div>
+        <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:14px;">"Ruošiuosi egzaminams vakare po darbo. Iki šios kėdės po 2 val. jausdavausi išvargusi. Dabar galiu sėdėti 4–5 val. be jokio diskomforto. Investicija į save."</p>
+        <div style="font-size:13px;font-weight:600;color:var(--stone);">Lina G. · Teisininkė, 29 m.</div>
+      </div>
+    </div>
+      <div style="background:#f9f8f5;border-radius:16px;border:1px solid var(--line);padding:22px;">
+        <div style="color:#f0a814;font-size:15px;margin-bottom:10px;">★★★★★</div>
+        <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:14px;">"Vėsinimo sistema tikrai veikia. Vasarą tai - išsigelbėjimas. Nugara nebeskauda po 8 valandų."</p>
+        <div style="font-size:13px;font-weight:600;color:var(--stone);">Andrius K. · Architektas</div>
+      </div>
+      <div style="background:#f9f8f5;border-radius:16px;border:1px solid var(--line);padding:22px;">
+        <div style="color:#f0a814;font-size:15px;margin-bottom:10px;">★★★★★</div>
+        <p style="font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:14px;">"Juosmens palaikymas automatiškai prisitaiko - tai jauti iš karto. Kaina aukšta, bet verta."</p>
+        <div style="font-size:13px;font-weight:600;color:var(--stone);">Viktorija S. · Buhalterė</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:linear-gradient(135deg,#14130f,#1a1916,#0d3d28);border-radius:20px;padding:clamp(32px,4vw,52px);text-align:center;color:#fff;">
+      <p style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8fd4b8;margin-bottom:14px;">Tai ne tik biuro kėdė</p>
+      <h3 style="font-size:clamp(20px,3vw,30px);font-weight:800;color:#fff;line-height:1.2;margin-bottom:14px;">Aktyvi ergonominė sistema,<br>kuri nuolat rūpinasi jumis.</h3>
+      <p style="font-size:15px;color:rgba(255,255,255,.6);line-height:1.7;max-width:520px;margin:0 auto 24px;">Automatinis juosmens palaikymas, integruotas vėsinimas, masažo funkcija ir 5 metų garantija - visa tai vienoje kėdėje.</p>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="display:inline-flex;align-items:center;gap:8px;background:#1a7a5a;color:#fff;font-weight:700;font-size:15px;padding:14px 28px;border-radius:12px;text-decoration:none;">Užsakyti dabar ↑</a>
+    </div>
+  </div>
+</section>
+
+<!-- Dažnai perkami kartu -->
+<section style="padding:clamp(48px,6vw,72px) 0;background:#fff;border-top:1px solid #e8e6e0;">
+  <div class="wrap">
+    <h3 style="font-size:clamp(18px,2vw,24px);font-weight:800;color:#14130f;margin-bottom:28px;">Dažnai perkami kartu</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:700px;">
+      <div style="border:1px solid #e8e6e0;border-radius:16px;padding:20px;display:flex;gap:16px;align-items:center;">
+        <img src="black.png" style="width:72px;height:72px;object-fit:contain;border-radius:8px;background:#f9f8f5;" alt="ERVO Pro Premium">
+        <div>
+          <div style="font-size:13px;color:#6b6759;margin-bottom:4px;">Ergonominė kėdė</div>
+          <div style="font-size:14px;font-weight:700;color:#14130f;">ERVO Pro Premium</div>
+          <div style="font-size:16px;font-weight:800;color:#14130f;margin-top:4px;">299 €</div>
+        </div>
+      </div>
+      <div style="border:2px solid #1a7a5a;border-radius:16px;padding:20px;display:flex;gap:16px;align-items:center;position:relative;">
+        <span style="position:absolute;top:-10px;left:16px;background:#1a7a5a;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;">+10% nuolaida</span>
+        <img src="https://elevoralt.lovable.app/__l5e/assets-v1/b1ad2cfc-15d1-4e7e-8e17-5d4c83acad95/desk-hero.png" style="width:72px;height:72px;object-fit:contain;border-radius:8px;background:#f9f8f5;" alt="ERVO Lift Pro stalas">
+        <div>
+          <div style="font-size:13px;color:#6b6759;margin-bottom:4px;">El. reguliuojamas stalas</div>
+          <div style="font-size:14px;font-weight:700;color:#14130f;">ERVO Lift Pro</div>
+          <div style="font-size:16px;font-weight:800;color:#14130f;margin-top:4px;"><span style="text-decoration:line-through;font-size:13px;color:#9ca3af;font-weight:400;">209 €</span> 188 €</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:20px;display:flex;align-items:center;gap:16px;">
+      <button class="btn btn-dark add-cart" data-id="lift-bundle" data-name="ERVO Lift Pro stalas + kėdė komplektas" data-price="487" data-img="black.png" style="padding:14px 28px;">Pridėti abu į krepšelį - 487 € <span style="opacity:.6;font-weight:400;font-size:13px;margin-left:6px;">vietoje 508 €</span></button>
+    </div>
+  </div>
+</section>
+<!-- FAQ -->
+<section style="padding:clamp(56px,7vw,88px) 0;background:var(--cloud);">
+  <div class="wrap" style="max-width:760px;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <span style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pine);">Klausimai ir atsakymai</span>
+      <h2 style="font-size:clamp(24px,3vw,36px);font-weight:800;color:var(--ink);margin-top:12px;">Viskas, ką norite žinoti</h2>
+    </div>
+    <div id="faqList" style="display:flex;flex-direction:column;gap:2px;">
+      <div class="faq-item" style="background:#fff;border-radius:14px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:20px 24px;font-size:15px;font-weight:600;color:var(--ink);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">Per kiek laiko pristatoma? <span class="faq-arrow" style="font-size:20px;color:var(--pine);flex-shrink:0;transition:transform .25s;">+</span></button>
+        <div class="faq-a" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--stone);line-height:1.7;">Klaipėdoje – tą pačią dieną, visoje Lietuvoje – 2–4 darbo dienas. Pristatymas nemokamas į namus arba biurą.</div>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:14px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:20px 24px;font-size:15px;font-weight:600;color:var(--ink);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">Kaip veikia 30 dienų bandymas? <span class="faq-arrow" style="font-size:20px;color:var(--pine);flex-shrink:0;transition:transform .25s;">+</span></button>
+        <div class="faq-a" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--stone);line-height:1.7;">Pristatome kėdę, naudojate 30 dienų savo aplinkoje. Jei netinka - skambinate, mes nemokamai pasiimame ir grąžiname 100% pinigų. Be klausimų, be biurokratijos.</div>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:14px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:20px 24px;font-size:15px;font-weight:600;color:var(--ink);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">Ar reikia rinkti patiems? <span class="faq-arrow" style="font-size:20px;color:var(--pine);flex-shrink:0;transition:transform .25s;">+</span></button>
+        <div class="faq-a" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--stone);line-height:1.7;">Kėdė surenkama per 10–15 minučių su komplekte esančiais įrankiais. Instrukcija aiški su brėžiniais. Jei pageidaujate - pasiūlome surinkimo paslaugą pristatymo metu.</div>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:14px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:20px 24px;font-size:15px;font-weight:600;color:var(--ink);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">Kokia garantija? <span class="faq-arrow" style="font-size:20px;color:var(--pine);flex-shrink:0;transition:transform .25s;">+</span></button>
+        <div class="faq-a" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--stone);line-height:1.7;">5 metų garantija mechanizmams, konstrukcijai ir medžiagoms. Jei bet kas lūžta ar nusidėvi per 5 metus - keičiame be papildomo mokesčio.</div>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:14px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:20px 24px;font-size:15px;font-weight:600;color:var(--ink);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">Koks maksimalus svoris ir ūgis? <span class="faq-arrow" style="font-size:20px;color:var(--pine);flex-shrink:0;transition:transform .25s;">+</span></button>
+        <div class="faq-a" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--stone);line-height:1.7;">Kėdė tinka žmonėms nuo 155 iki 200 cm ūgio ir iki 150 kg svorio. Sėdynės aukštis reguliuojamas 44–54 cm ribose.</div>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:14px;overflow:hidden;">
+        <button class="faq-q" onclick="toggleFaq(this)" style="width:100%;text-align:left;padding:20px 24px;font-size:15px;font-weight:600;color:var(--ink);background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">Ar galima grąžinti, jei nepatiko? <span class="faq-arrow" style="font-size:20px;color:var(--pine);flex-shrink:0;transition:transform .25s;">+</span></button>
+        <div class="faq-a" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--stone);line-height:1.7;">Taip - tą ir reiškia 30 dienų bandymas. Nereikia pagrįsti priežasties. Susisiekite el. paštu arba telefonu, mes pasirūpiname likusia proceso dalimi.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function toggleFaq(btn) {
+  const a = btn.nextElementSibling;
+  const arrow = btn.querySelector('.faq-arrow');
+  const open = a.style.display === 'block';
+  a.style.display = open ? 'none' : 'block';
+  arrow.textContent = open ? '+' : '×';
+  arrow.style.transform = open ? '' : 'rotate(0deg)';
+}
+</script>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo"><img src="new%20logo.png" class="foot-logo-img" alt="ERVO" width="160" height="54"></div>
+        <p class="foot-about">Premium ergonominės kėdės ir reguliuojamo aukščio stalai, sukurti sveikesnei ir produktyvesnei darbo dienai.</p>
+        <div class="foot-pay">
+          <span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>Bankas</span><span>Dalimis 0%</span>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Produktai</h4>
+        <ul>
+          <li><a href="kedes.html">Ergonominės biuro kėdės</a></li>
+          <li><a href="stalai.html">Reguliuojamo aukščio stalai</a></li>
+          <li><a href="smart.html">ERVO Smart Aria</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Pagalba</h4>
+        <ul>
+          <li><a href="index.html#duk">DUK</a></li>
+          <li><a href="index.html#kaip-veikia">30 dienų bandymas</a></li>
+          <li><a href="pristatymas.html">Pristatymas</a></li>
+          <li><a href="pirkimo-taisykles.html">Grąžinimas</a></li>
+          <li><a href="pirkimo-taisykles.html">Garantija</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Kontaktai</h4>
+        <ul>
+          <li><a href="tel:+37065577536">+370 655 77536</a></li>
+          <li><a href="mailto:info@ervo.lt">info@ervo.lt</a></li>
+          <li><a href="kontaktai.html">Kontaktai</a></li>
+          <li><a href="kontaktai.html">I–V 9:00–18:00</a></li>
+          <li style="margin-top:14px;display:flex;gap:12px;">
+            <a href="#" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--line);color:var(--ink);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--line);color:var(--ink);"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>
+        © 2026 ERVO Ergonomika. Visos teisės saugomos.
+        <div class="foot-company">„ERVO Ergonomika" · Lietuva</div>
+      </div>
+      <div class="foot-legal">
+        <a href="privatumo-politika.html">Privatumo politika</a>
+        <a href="pirkimo-taisykles.html">Pirkimo taisyklės</a>
+        <a href="slapukai.html">Slapukai</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay" onclick="Cart.close()"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Pirkinių krepšelis">
+  <div class="cart-head">
+    <h3>Krepšelis</h3>
+    <button class="cart-close" aria-label="Uždaryti krepšelį" onclick="Cart.close()">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot" id="cartFoot" style="display:none;">
+    <div class="cart-total">
+      <span>Iš viso</span>
+      <span id="cartTotal">0 €</span>
+    </div>
+    <div class="cart-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+      Nemokamas pristatymas · 30 dienų bandymas
+    </div>
+    <a href="checkout.html" class="btn btn-dark">Apmokėti</a>
+  </div>
+</aside>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+  <span id="toastMsg">Pridėta į krepšelį</span>
+</div>
+
+<script src="app.js"></script>
+<div id="stickyBar" style="position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e8e6e0;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;z-index:999;transform:translateY(100%);transition:transform .3s ease;box-shadow:0 -4px 24px rgba(0,0,0,.1);">
+  <div>
+    <div id="stickyName" style="font-size:14px;font-weight:700;color:#14130f;"></div>
+    <div id="stickyPrice" style="font-size:18px;font-weight:800;color:#14130f;"></div>
+  </div>
+  <button id="stickyBtn" class="btn btn-dark add-cart" style="padding:14px 28px;font-size:15px;">Į krepšelį</button>
+</div>
+<script>
+(function(){
+  const mainBtn = document.querySelector('.spotlight-buy .add-cart');
+  const bar = document.getElementById('stickyBar');
+  const stickyBtn = document.getElementById('stickyBtn');
+  if (!mainBtn || !bar) return;
+  document.getElementById('stickyName').textContent = mainBtn.dataset.name || '';
+  document.getElementById('stickyPrice').textContent = (mainBtn.dataset.price || '') + ' €';
+  stickyBtn.dataset.id = mainBtn.dataset.id;
+  stickyBtn.dataset.name = mainBtn.dataset.name;
+  stickyBtn.dataset.price = mainBtn.dataset.price;
+  stickyBtn.dataset.img = mainBtn.dataset.img;
+  const obs = new IntersectionObserver(([e]) => {
+    bar.style.transform = e.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+  }, {threshold:0});
+  obs.observe(mainBtn);
+  // Keep sticky in sync when color changes
+  const mo = new MutationObserver(() => {
+    stickyBtn.dataset.id = mainBtn.dataset.id;
+    stickyBtn.dataset.name = mainBtn.dataset.name;
+    stickyBtn.dataset.price = mainBtn.dataset.price;
+    stickyBtn.dataset.img = mainBtn.dataset.img;
+    document.getElementById('stickyName').textContent = mainBtn.dataset.name || '';
+  });
+  mo.observe(mainBtn, {attributes:true});
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

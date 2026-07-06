@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pirkimo taisyklės - ERVO</title>
+<meta name="description" content="ERVO pirkimo taisyklės. Užsakymo, pristatymo, grąžinimo ir garantijos sąlygos pagal LR teisės aktus.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .legal-wrap { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+  .legal-hero { background: var(--paper); border-bottom: 1px solid var(--line); padding: clamp(48px,6vw,80px) 0 clamp(36px,4vw,52px); }
+  .legal-body { padding: clamp(48px,6vw,80px) 0 clamp(64px,8vw,100px); }
+  .legal-body h2 { font-size: 20px; font-weight: 700; color: var(--ink); margin: 40px 0 12px; padding-top: 40px; border-top: 1px solid var(--line); }
+  .legal-body h2:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+  .legal-body p { font-size: 15px; color: var(--stone); line-height: 1.8; margin-bottom: 14px; }
+  .legal-body ul, .legal-body ol { margin: 0 0 14px 20px; }
+  .legal-body ul li, .legal-body ol li { font-size: 15px; color: var(--stone); line-height: 1.8; margin-bottom: 6px; }
+  .legal-body ul li { list-style: disc; }
+  .legal-body ol li { list-style: decimal; }
+  .legal-body a { color: var(--pine); text-decoration: underline; }
+  .legal-body strong { color: var(--ink); }
+  .legal-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 20px; }
+  .legal-meta span { font-size: 13px; color: var(--mist); display: flex; align-items: center; gap: 6px; }
+  .legal-toc { background: var(--cloud); border-radius: 16px; padding: 24px 28px; margin-bottom: 48px; }
+  .legal-toc h3 { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--stone); margin-bottom: 14px; }
+  .legal-toc ol { margin: 0 0 0 18px; }
+  .legal-toc ol li { font-size: 14px; color: var(--ink); line-height: 1.8; list-style: decimal; }
+  .legal-toc ol li a { color: var(--pine); text-decoration: none; }
+  .legal-toc ol li a:hover { text-decoration: underline; }
+  .info-box { background: var(--pine-soft); border-left: 3px solid var(--pine); border-radius: 0 12px 12px 0; padding: 16px 20px; margin-bottom: 20px; }
+  .info-box p { margin: 0; color: var(--ink); }
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Nemokamas pristatymas visoje Lietuvoje</span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> 30 dienų bandymas namuose</span>
+</div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="ERVO pradžia"><img src="naujas%20logo.png" class="logo-img" alt="ERVO" width="114" height="38"></a>
+    <nav class="nav-menu">
+      <a href="kedes.html">Ergonominės biuro kėdės</a>
+      <a href="stalai.html">Reguliuojamo aukščio stalai</a>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" aria-label="Atidaryti krepšelį" onclick="Cart.open()">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="legal-hero">
+    <div class="legal-wrap">
+      <div class="crumbs" style="font-size:13px;color:var(--mist);margin-bottom:20px;"><a href="index.html" style="color:var(--stone);">Pradžia</a> / Pirkimo taisyklės</div>
+      <h1 style="font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px;">Pirkimo taisyklės</h1>
+      <p style="font-size:16px;color:var(--stone);line-height:1.6;max-width:580px;">Šios taisyklės reglamentuoja pirkimą ERVO elektroninėje parduotuvėje. Atlikdami užsakymą, patvirtinate, kad susipažinote su šiomis sąlygomis.</p>
+      <div class="legal-meta">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Atnaujinta: 2026 m. sausio 1 d.</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Atitinka LR CK ir Vartotojų teisių apsaugos įstatymą</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-body">
+    <div class="legal-wrap">
+
+      <div class="legal-toc">
+        <h3>Turinys</h3>
+        <ol>
+          <li><a href="#salys">Šalys ir taikymas</a></li>
+          <li><a href="#kainos">Kainos ir mokėjimas</a></li>
+          <li><a href="#uzsakymas">Užsakymo pateikimas ir patvirtinimas</a></li>
+          <li><a href="#pristatymas">Pristatymas</a></li>
+          <li><a href="#bandymas">30 dienų bandymas namuose</a></li>
+          <li><a href="#grazinimas">Grąžinimas ir keitimas</a></li>
+          <li><a href="#garantija">Garantija</a></li>
+          <li><a href="#atsakomybe">Atsakomybė</a></li>
+          <li><a href="#gincai">Ginčų sprendimas</a></li>
+          <li><a href="#baigiamosios">Baigiamosios nuostatos</a></li>
+        </ol>
+      </div>
+
+      <h2 id="salys">1. Šalys ir taikymas</h2>
+      <p><strong>Pardavėjas:</strong> „ERVO Ergonomika", el. paštas <a href="mailto:info@ervo.lt">info@ervo.lt</a>, tel. <a href="tel:+37065577536">+370 655 77536</a>.</p>
+      <p><strong>Pirkėjas:</strong> fizinis asmuo, sulaukęs 18 metų, arba juridinis asmuo, perkantis prekes svetainėje ervo.lt.</p>
+      <p>Šios taisyklės taikomos visiems pirkimams, atliekamiems ervo.lt. Pirkdami mūsų svetainėje, pirkėjas patvirtina, kad perskaitė ir sutinka su šiomis taisyklėmis.</p>
+
+      <h2 id="kainos">2. Kainos ir mokėjimas</h2>
+      <p>Visos kainos nurodytos eurais (€) su PVM. Pardavėjas pasilieka teisę keisti kainas, tačiau jau patvirtinto užsakymo kaina nekinta.</p>
+      <p><strong>Priimami mokėjimo būdai:</strong></p>
+      <ul>
+        <li>Mokėjimo kortelė (Visa, Mastercard) - apdorojama saugiai per mokėjimų tarpininką</li>
+        <li>El. bankininkystė per Paysera</li>
+        <li>PayPal</li>
+        <li>Apple Pay / Google Pay</li>
+        <li>Banko pavedimas (apmokėjimas iki 2 darbo dienų)</li>
+      </ul>
+      <p>Mokėjimo duomenys perduodami šifruotu SSL ryšiu. Pardavėjas kortelių duomenų nesaugo.</p>
+
+      <h2 id="uzsakymas">3. Užsakymo pateikimas ir patvirtinimas</h2>
+      <ol>
+        <li>Pirkėjas išsirenka prekes ir jas prideda į krepšelį.</li>
+        <li>Užpildo pristatymo informaciją ir pasirenka mokėjimo būdą.</li>
+        <li>Patvirtina užsakymą mygtuku „Pateikti užsakymą".</li>
+        <li>Per 30 minučių el. paštu gaunamas užsakymo patvirtinimas su užsakymo numeriu.</li>
+        <li>Sutartis laikoma sudaryta nuo patvirtinimo el. laiško išsiuntimo momento.</li>
+      </ol>
+      <p>Jei per 1 valandą patvirtinimo el. laiško negavote, patikrinkite šlamšto aplankalą arba susisiekite su mumis.</p>
+
+      <h2 id="pristatymas">4. Pristatymas</h2>
+      <p><strong>Pristatymo sąlygos:</strong></p>
+      <ul>
+        <li><strong>Visoje Lietuvoje - nemokamas</strong> pristatymas į namus arba biurą.</li>
+        <li><strong>Klaipėda:</strong> tą pačią dieną.</li>
+        <li><strong>Visa Lietuva:</strong> 2–4 darbo dienos.</li>
+      </ul>
+      <p>Pristatymo laikas skaičiuojamas nuo mokėjimo patvirtinimo. Pirkėjas informuojamas SMS arba el. paštu apie siuntos statusą. Pristatymo metu prašome patikrinti pakuotės būklę - jei pakuotė pažeista, pažymėkite tai kurjerio dokumentuose.</p>
+      <p>Jei pirkėjas nurodo neteisingą pristatymo adresą ir siuntą reikia pristatyti pakartotinai, papildomi pristatymo kaštai tenka pirkėjui.</p>
+
+      <h2 id="bandymas">5. 30 dienų bandymas namuose</h2>
+      <div class="info-box">
+        <p><strong>ERVO garantuoja 30 dienų bandymą namuose.</strong> Jei per 30 dienų nuo prekės gavimo dienos prekė jums netinka dėl bet kokios priežasties - grąžiname 100% sumokėtos sumos.</p>
+      </div>
+      <p>Bandymo sąlygos:</p>
+      <ul>
+        <li>Prekę galite naudoti normaliu intensyvumu visą 30 dienų laikotarpį.</li>
+        <li>Norėdami grąžinti, susisiekite el. paštu <a href="mailto:info@ervo.lt">info@ervo.lt</a> arba telefonu per 30 dienų nuo gavimo.</li>
+        <li>Nemokamai pasiimame prekes iš jūsų namų ar biuro.</li>
+        <li>Pinigai grąžinami per 5–10 darbo dienų po prekės gavimo.</li>
+        <li>Pinigai grąžinami ta pačia mokėjimo priemone, kuria buvo atliktas mokėjimas.</li>
+      </ul>
+
+      <h2 id="grazinimas">6. Grąžinimas ir keitimas</h2>
+      <p>Papildomai prie 30 dienų bandymo, pagal LR Civilinį kodeksą ir Mažmeninės prekybos taisykles:</p>
+      <ul>
+        <li>Vartotojas turi teisę per <strong>14 dienų</strong> nuo prekės gavimo atsisakyti sutarties be priežasties nurodymo.</li>
+        <li>Grąžinama prekė turi būti originalioje pakuotėje, nesugadinta, su visais priedais ir dokumentais.</li>
+        <li>Dėl grąžinimo kreipkitės el. paštu <a href="mailto:info@ervo.lt">info@ervo.lt</a>.</li>
+        <li>Grąžinimo išlaidos tenka pirkėjui, išskyrus atvejus, kai grąžinama dėl prekės defekto.</li>
+      </ul>
+      <p>Teisė atsisakyti sutarties netaikoma pagal specialų užsakymą pagamintoms arba pritaikytoms prekėms.</p>
+
+      <h2 id="garantija">7. Garantija</h2>
+      <p>Visiems ERVO produktams suteikiama <strong>5 metų gamintojo garantija</strong> mechanizmams, konstrukcijai ir medžiagoms.</p>
+      <p>Garantija apima:</p>
+      <ul>
+        <li>Gamybos defektus ir medžiagų trūkumus</li>
+        <li>Mechanizmų gedimus normalaus naudojimo metu</li>
+        <li>Konstrukcijos suirimus</li>
+      </ul>
+      <p>Garantija netaikoma:</p>
+      <ul>
+        <li>Žalai, atsiradusiai dėl netinkamo naudojimo ar naudojimo nesilaikant instrukcijų</li>
+        <li>Natūraliam medžiagų nusidėvėjimui</li>
+        <li>Žalai, atsiradusiai dėl nelaimingų atsitikimų, vandens, ugnies ar kitų išorinių veiksnių</li>
+        <li>Savivališkam remontui ar modifikavimui</li>
+      </ul>
+      <p>Garantinio aptarnavimo atveju kreipkitės el. paštu <a href="mailto:info@ervo.lt">info@ervo.lt</a> su užsakymo numeriu ir defekto aprašymu bei nuotraukomis.</p>
+      <p>Papildomai galioja LR Civilinio kodekso numatytos vartotojų teisės dėl netinkamos kokybės prekių (2 metų teisinis garantinis terminas).</p>
+
+      <h2 id="atsakomybe">8. Atsakomybė</h2>
+      <p>Pardavėjas neatsako už žalą, kilusią dėl:</p>
+      <ul>
+        <li>Netinkamo prekės naudojimo</li>
+        <li>Trečiųjų šalių veiksmų</li>
+        <li>Force majeure aplinkybių (stichinių nelaimių, epidemijų, karų ir pan.)</li>
+      </ul>
+      <p>Pardavėjo atsakomybė bet kuriuo atveju negali viršyti pirkėjo sumokėtos sumos už konkrečią prekę.</p>
+
+      <h2 id="gincai">9. Ginčų sprendimas</h2>
+      <p>Ginčai sprendžiami derybų keliu. Jei susitarti nepavyksta, pirkėjas gali:</p>
+      <ul>
+        <li>Kreiptis į Valstybinę vartotojų teisių apsaugos tarnybą (<a href="https://vvtat.lt" target="_blank" rel="noopener">vvtat.lt</a>)</li>
+        <li>Naudotis ES ginčų sprendimo platforma (<a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>)</li>
+        <li>Kreiptis į kompetentingą Lietuvos teismą pagal pardavėjo buveinės vietą</li>
+      </ul>
+      <p>Šiai sutarčiai taikoma Lietuvos Respublikos teisė.</p>
+
+      <h2 id="baigiamosios">10. Baigiamosios nuostatos</h2>
+      <p>Pardavėjas pasilieka teisę bet kada keisti šias taisykles. Pakeitimai skelbiami svetainėje ir įsigalioja nuo jų paskelbimo dienos. Jau pateiktiems užsakymams taikoma užsakymo pateikimo metu galiojusi redakcija.</p>
+      <p>Jei kuri nors šių taisyklių nuostata pripažįstama negaliojančia, likusios nuostatos lieka galioti.</p>
+      <p>Taisyklės paskutinį kartą atnaujintos: <strong>2026 m. sausio 1 d.</strong></p>
+      <p>Klausimais kreipkitės: <a href="mailto:info@ervo.lt">info@ervo.lt</a> · <a href="tel:+37065577536">+370 655 77536</a></p>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo"><img src="new%20logo.png" class="foot-logo-img" alt="ERVO" width="160" height="54"></div>
+        <p class="foot-about">Premium ergonominės kėdės ir reguliuojamo aukščio stalai, sukurti sveikesnei ir produktyvesnei darbo dienai.</p>
+        <div class="foot-pay"><span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>Bankas</span></div>
+      </div>
+      <div class="foot-col"><h4>Produktai</h4><ul><li><a href="kedes.html">Ergonominės biuro kėdės</a></li><li><a href="stalai.html">Reguliuojamo aukščio stalai</a></li><li><a href="smart.html">ERVO Smart Aria</a></li></ul></div>
+      <div class="foot-col"><h4>Pagalba</h4><ul><li><a href="index.html#duk">DUK</a></li><li><a href="#">Pristatymas</a></li><li><a href="#">Grąžinimas</a></li><li><a href="#">Garantija</a></li></ul></div>
+      <div class="foot-col"><h4>Kontaktai</h4><ul><li><a href="tel:+37065577536">+370 655 77536</a></li><li><a href="mailto:info@ervo.lt">info@ervo.lt</a></li><li>I–V 9:00–18:00</li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 ERVO Ergonomika. Visos teisės saugomos.<div class="foot-company">„ERVO Ergonomika" · Lietuva</div></div>
+      <div class="foot-legal">
+        <a href="privatumo-politika.html">Privatumo politika</a>
+        <a href="pirkimo-taisykles.html">Pirkimo taisyklės</a>
+        <a href="slapukai.html">Slapukai</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
