@@ -3,7 +3,6 @@
 // priimama tik jei ji sutampa su leidžiama (apsauga nuo kainų klastojimo).
 
 const Stripe = require('stripe');
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Leidžiamos kainos pagal produkto ID šeimą (eurais)
 const PRICE_RULES = [
@@ -31,6 +30,8 @@ module.exports = async (req, res) => {
     res.status(500).json({ error: 'Stripe raktas nesukonfigūruotas serveryje.' });
     return;
   }
+
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
