@@ -85,7 +85,8 @@ module.exports = async (req, res) => {
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
-      automatic_payment_methods: { enabled: true }, // Stripe pats parodo visus įjungtus metodus (kortelė, Apple Pay, Google Pay, Link) pagal įrenginį
+      // Nenurodome payment_method_types — tada Checkout automatiškai naudoja VISUS
+      // Stripe skydelyje įjungtus metodus (kortelė, Apple Pay, Google Pay, Link) pagal įrenginį.
       line_items,
       locale: 'lt',
       customer_email: customer && customer.email ? String(customer.email) : undefined,
