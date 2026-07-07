@@ -241,6 +241,10 @@
   const fmt = n => new Intl.NumberFormat('lt-LT').format(n) + ' €';
   let items = [];
   try { items = JSON.parse(localStorage.getItem('ervo_cart')) || []; } catch (e) { items = []; }
+  // Išvalome sugadintas prekes (be pavadinimo ar su netinkama kaina), kad nerodytų „undefined/NaN"
+  items = items.filter(i => i && i.name && Number.isFinite(Number(i.price)));
+  items.forEach(i => { i.price = Number(i.price); });
+  localStorage.setItem('ervo_cart', JSON.stringify(items));
 
   const main = document.getElementById('checkoutMain');
   const empty = document.getElementById('emptyState');

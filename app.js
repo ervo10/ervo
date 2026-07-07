@@ -102,9 +102,17 @@
 
     return {
       add(p) {
-        const ex = items.find(i => i.id === p.id);
-        if (ex) ex.qty++; else items.push({ ...p, qty: 1 });
-        save(); render(); toast(p.name + ' pridėta į krepšelį');
+        // Priimame ir objektą {id,name,price,img}, ir mygtuko elementą (onclick="Cart.add(this)")
+        if (p instanceof Element) {
+          p = { id: p.dataset.id, name: p.dataset.name, price: Number(p.dataset.price), img: p.dataset.img };
+        }
+        const price = Number(p && p.price);
+        // Apsauga: nepridedame prekės be teisingų duomenų
+        if (!p || !p.id || !p.name || !Number.isFinite(price)) return;
+        const item = { id: p.id, name: p.name, price: price, img: p.img };
+        const ex = items.find(i => i.id === item.id);
+        if (ex) ex.qty++; else items.push({ ...item, qty: 1 });
+        save(); render(); toast(item.name + ' pridėta į krepšelį');
       },
       inc(id) { const i = items.find(x => x.id === id); if (i) { i.qty++; save(); render(); } },
       dec(id) { const i = items.find(x => x.id === id); if (i) { i.qty--; if (i.qty <= 0) items = items.filter(x => x.id !== id); save(); render(); } },
@@ -120,10 +128,13 @@
   // Wire add-to-cart buttons
   document.querySelectorAll('.add-cart').forEach(btn => {
     btn.addEventListener('click', () => {
+      const price = Number(btn.dataset.price);
+      // Apsauga: nepridedame prekės be teisingų duomenų (kad neatsirastų „undefined/NaN")
+      if (!btn.dataset.id || !btn.dataset.name || !Number.isFinite(price)) return;
       Cart.add({
         id: btn.dataset.id,
         name: btn.dataset.name,
-        price: Number(btn.dataset.price),
+        price: price,
         img: btn.dataset.img
       });
       Cart.open();
