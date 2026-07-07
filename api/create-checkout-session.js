@@ -85,8 +85,7 @@ module.exports = async (req, res) => {
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
-      // Nenurodome payment_method_types — tada Checkout automatiškai naudoja VISUS
-      // Stripe skydelyje įjungtus metodus (kortelė, Apple Pay, Google Pay, Link) pagal įrenginį.
+      payment_method_types: ['card'], // kortelė + Apple Pay / Google Pay (piniginukai rodomi automatiškai palaikomuose įrenginiuose)
       line_items,
       locale: 'lt',
       customer_email: customer && customer.email ? String(customer.email) : undefined,
@@ -98,6 +97,6 @@ module.exports = async (req, res) => {
     res.status(200).json({ url: session.url });
   } catch (err) {
     console.error('Stripe klaida:', err);
-    res.status(500).json({ error: 'Nepavyko sukurti apmokėjimo sesijos. Bandykite dar kartą.' });
+    res.status(500).json({ error: 'Nepavyko sukurti apmokėjimo sesijos. Bandykite dar kartą.', details: err && err.message });
   }
 };
