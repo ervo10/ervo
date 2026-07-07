@@ -34,7 +34,17 @@ module.exports = async (req, res) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
   try {
-    const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
+    // Nuskaitome užklausos turinį patys iš srauto — NELIEČIAME req.body,
+    // nes Vercel „lazy" body skaitytuvas kartais meta klaidą „Invalid JSON".
+    let raw = '';
+    await new Promise((resolve) => {
+      req.on('data', (c) => { raw += c; });
+      req.on('end', resolve);
+      req.on('error', resolve);
+    });
+    let body = {};
+    if (raw) { try { body = JSON.parse(raw); } catch (e) { body = {}; } }
+    else if (req.body && typeof req.body === 'object') { body = req.body; }
     const { items, customer } = body;
 
     if (!Array.isArray(items) || items.length === 0) {
