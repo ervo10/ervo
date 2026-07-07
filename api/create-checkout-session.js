@@ -107,19 +107,6 @@ module.exports = async (req, res) => {
     res.status(200).json({ url: session.url });
   } catch (err) {
     console.error('Stripe klaida:', err);
-    const k = process.env.STRIPE_SECRET_KEY || '';
-    res.status(500).json({
-      error: 'Nepavyko sukurti apmokėjimo sesijos. Bandykite dar kartą.',
-      details: err && err.message,
-      type: err && err.type,
-      status: err && err.statusCode,
-      keyLen: k.length,
-      keyPrefix: k.slice(0, 3),
-      keyWhitespace: /\s/.test(k),
-      code: err && err.code,
-      param: err && err.param,
-      rawType: err && err.rawType,
-      stack: err && err.stack ? String(err.stack).slice(0, 400) : null
-    });
+    res.status(500).json({ error: 'Nepavyko sukurti apmokėjimo sesijos. Bandykite dar kartą.' });
   }
 };
