@@ -105,7 +105,11 @@ module.exports = async (req, res) => {
       status: err && err.statusCode,
       keyLen: k.length,
       keyPrefix: k.slice(0, 3),
-      keyWhitespace: /\s/.test(k)
+      keyWhitespace: /\s/.test(k),
+      code: err && err.code,
+      param: err && err.param,
+      rawType: err && err.rawType,
+      stack: err && err.stack ? String(err.stack).slice(0, 400) : null
     });
   }
 };
