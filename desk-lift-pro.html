@@ -90,7 +90,7 @@
       <!-- GALLERY -->
       <div class="gallery">
         <div class="gallery-main">
-          <img id="galleryMain" src="desk3.png" alt="ERVO Lift Pro - Juodas reguliuojamo aukščio stalas, Natūralus juodas spalva" width="800" height="800">
+          <img id="galleryMain" src="desk black.jpg" alt="ERVO Lift Pro - Juodas reguliuojamo aukščio stalas" width="800" height="800">
         </div>
         <div class="gallery-thumbs" id="deskProThumbs">
           <button class="thumb active" data-img="desk3.png" aria-label="Nuotrauka 1"><img src="desk3.png" alt="ERVO Lift Pro - Juodas, vaizdas 1" loading="lazy"></button>
@@ -119,7 +119,7 @@
 
         <!-- COLOR SELECTOR -->
         <div class="color-select" style="margin-top:22px;">
-          <div class="color-select-label">Faktūra: <strong id="deskProColorName">Natūralus juodas</strong></div>
+          <div class="color-select-label">Faktūra: <strong id="deskProColorName">Juodas</strong></div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;" id="deskProSwatches">
             <button class="desk-finish-btn active" data-color="natural" data-label="Natūralus juodas" data-img="desk3.png" title="Natūralus juodas" style="width:52px;height:52px;border-radius:10px;background:#e8d5b8;border:2px solid var(--ink);padding:0;cursor:pointer;transition:transform .2s,border-color .2s;"></button>
             <button class="desk-finish-btn" data-color="oak" data-label="Ąžuolo imitacija" data-img="desk1.png" title="Ąžuolo imitacija" style="width:52px;height:52px;border-radius:10px;background:#d4b896;border:2px solid var(--line);padding:0;cursor:pointer;transition:transform .2s,border-color .2s;"></button>
@@ -497,7 +497,7 @@
     nameEl.textContent = f.label;
     mainImg.src = f.img;
     cartBtn.dataset.id   = f.cartId;
-    cartBtn.dataset.name = 'ERVO Lift Pro - Juodas - ' + f.label;
+    cartBtn.dataset.name = 'ERVO Lift Pro - ' + f.label;
     cartBtn.dataset.img  = f.img;
     thumbsWrap.innerHTML = `<button class="thumb active" data-img="${f.img}"><img src="${f.img}" alt="${f.label}" loading="lazy"></button>`;
     btns.forEach(b => {
@@ -510,7 +510,7 @@
     const f = finishes.find(x => x.color === b.dataset.color);
     if(f) setFinish(f);
   }));
-  setFinish(finishes[0]);
+  setFinish(finishes[4]);
 
   // Size switcher
   const sizeBtns   = document.querySelectorAll('#deskProSizes .size-btn');

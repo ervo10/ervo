@@ -393,7 +393,7 @@
         </div>
         <div class="countdown-bar">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          Pasiūlymas baigiasi per <strong id="cdTimer">23:59:59</strong>
+          Mėnesio akcija baigiasi po <strong id="cdTimer">—</strong>
         </div>
         <div class="spotlight-buy">
           <div class="price-block">
@@ -1020,19 +1020,20 @@ document.getElementById('nlForm').addEventListener('submit',function(e){
   els.forEach(el => obs.observe(el));
 })();
 
-// ─── COUNTDOWN ───
+// ─── COUNTDOWN (tikras — iki mėnesio pabaigos) ───
 (function(){
   const el = document.getElementById('cdTimer');
   if (!el) return;
-  // Baigiasi šios dienos vidurnaktį — kitą dieną prasideda iš naujo
   const tick = () => {
     const now = new Date();
-    const end = new Date(now); end.setHours(24, 0, 0, 0);
+    // Paskutinė šio mėnesio diena, 23:59:59
+    const end = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
     let s = Math.max(0, Math.floor((end - now) / 1000));
+    const d = Math.floor(s / 86400); s -= d * 86400;
     const h = String(Math.floor(s / 3600)).padStart(2, '0');
     const m = String(Math.floor(s % 3600 / 60)).padStart(2, '0');
     const sec = String(s % 60).padStart(2, '0');
-    el.textContent = h + ':' + m + ':' + sec;
+    el.textContent = (d > 0 ? d + ' d. ' : '') + h + ':' + m + ':' + sec;
   };
   tick(); setInterval(tick, 1000);
 })();

@@ -394,9 +394,9 @@
   function setFinish(f) {
     nameEl.textContent = f.label;
     mainImg.src = f.img;
-    mainImg.alt = 'ERVO Lift Pro - Baltas - ' + f.label;
+    mainImg.alt = 'ERVO Lift Pro - ' + f.label;
     cartBtn.dataset.id = f.cartId;
-    cartBtn.dataset.name = 'ERVO Lift Pro - Baltas - ' + f.label;
+    cartBtn.dataset.name = 'ERVO Lift Pro - ' + f.label;
     cartBtn.dataset.img = f.img;
     thumbsWrap.innerHTML = `<button class="thumb active" data-img="${f.img}"><img src="${f.img}" alt="${f.label}" loading="lazy"></button>`;
     btns.forEach(b => {
