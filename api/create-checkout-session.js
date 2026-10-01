@@ -6,9 +6,9 @@ const Stripe = require('stripe');
 
 // Leidžiamos kainos pagal produkto ID šeimą (eurais)
 const PRICE_RULES = [
-  { test: (id) => id.startsWith('pro-air'), allowed: [299] },              // ERVO Pro Premium (juoda/pilka)
-  { test: (id) => id === 'smart', allowed: [1299] },                       // ERVO Smart Aria
-  { test: (id) => id === 'lift-bundle', allowed: [487] },                  // Stalo + kėdės komplektas
+  { test: (id) => id.startsWith('pro-air'), allowed: [310] },              // ERVO Pro Premium (juoda/pilka)
+  { test: (id) => id === 'smart', allowed: [1499] },                       // ERVO Smart Aria
+  { test: (id) => id === 'lift-bundle', allowed: [498] },                  // Stalo + kėdės komplektas
   { test: (id) => id.startsWith('desk-lift') || id.startsWith('ervo-lift-pro'), allowed: [190, 209] }, // Lift Pro stalai (60x120 / 70x140)
 ];
 
