@@ -21,7 +21,16 @@
       "Bash(grep -aoP \"N\\\\S{0,4}trikdysite \\\\S+ \\\\S+ \\\\S+ \\\\S+\" lift-pro.html)",
       "Bash(perl -0pi -e 's/kad dirbumėte/kad dirbtumėte/g; s/Nei\\\\xc5\\\\xa1\\\\xc2\\\\xadtrikdysite/Netrikdysite/g; s/Nei\\\\xc5\\\\xa1trikdysite/Netrikdysite/g' lift-pro.html)",
       "Bash(perl -0pi -e ' *)",
-      "Bash(perl -0pi -e 's/Vilniuje pristatome per 1–2 darbo dienas, visoje Lietuvoje - per 2–4 darbo dienas/Klaipėdoje pristatome tą pačią dieną, visoje Lietuvoje - per 2–4 darbo dienas/g' index.html)"
+      "Bash(perl -0pi -e 's/Vilniuje pristatome per 1–2 darbo dienas, visoje Lietuvoje - per 2–4 darbo dienas/Klaipėdoje pristatome tą pačią dieną, visoje Lietuvoje - per 2–4 darbo dienas/g' index.html)",
+      "WebFetch(domain:ervo.vercel.app)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(perl -0pi -e 's/Surinkimas per 10 min\\\\./Surinkimas 10–15 min./g' index.html premium-juoda.html premium-pilka.html)",
+      "Bash(perl -0pi -e 's/>~15 min\\\\.</>10–15 min.</g' premium-juoda.html premium-pilka.html)",
+      "Bash(perl -0pi -e 's/Surinkimas užtrunka apie 15 minučių/Surinkimas užtrunka apie 10–15 minučių/g' premium-juoda.html premium-pilka.html)",
+      "Bash(perl -0pi -e 's/Investicija dešimtmečiui/Ilgalaikė investicija/g' index.html)",
+      "Bash(perl -0pi -e 's/pečiai atsipalaiduoja, kaklo įtampa dingsta/pečiai atsipalaiduoja, mažėja kaklo įtampa/g' index.html)"
     ]
   }
 }
