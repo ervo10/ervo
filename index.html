@@ -410,7 +410,7 @@ src="https://www.facebook.com/tr?id=1127725572937087&ev=PageView&noscript=1"
         </div>
         <div class="countdown-bar">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          Mėnesio akcija baigiasi po <strong id="cdTimer">—</strong>
+          Akcija galioja iki spalio 8 d. · baigiasi po <strong id="cdTimer">—</strong>
         </div>
         <div class="spotlight-buy">
           <div class="price-block">
@@ -1080,8 +1080,8 @@ document.getElementById('nlForm').addEventListener('submit',function(e){
   if (!el) return;
   const tick = () => {
     const now = new Date();
-    // Paskutinė šio mėnesio diena, 23:59:59
-    const end = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+    // Akcija galioja iki 2026-10-08 23:59:59
+    const end = new Date(2026, 9, 8, 23, 59, 59);
     let s = Math.max(0, Math.floor((end - now) / 1000));
     const d = Math.floor(s / 86400); s -= d * 86400;
     const h = String(Math.floor(s / 3600)).padStart(2, '0');
