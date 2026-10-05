@@ -113,6 +113,8 @@
         const ex = items.find(i => i.id === item.id);
         if (ex) ex.qty++; else items.push({ ...item, qty: 1 });
         save(); render(); toast(item.name + ' pridėta į krepšelį');
+        // Meta Pixel — AddToCart
+        if (window.fbq) fbq('track', 'AddToCart', { content_name: item.name, content_ids: [item.id], content_type: 'product', value: item.price, currency: 'EUR' });
       },
       inc(id) { const i = items.find(x => x.id === id); if (i) { i.qty++; save(); render(); } },
       dec(id) { const i = items.find(x => x.id === id); if (i) { i.qty--; if (i.qty <= 0) items = items.filter(x => x.id !== id); save(); render(); } },

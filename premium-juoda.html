@@ -28,6 +28,23 @@
   "offers": { "@type": "Offer", "price": "310", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
 }
 </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1127725572937087');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1127725572937087&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -692,6 +709,14 @@ function switchColor(c) {
   document.getElementById('swGrey').style.border = c === 'grey' ? '3px solid var(--ink)' : '3px solid transparent';
   // Navigate after short delay so user sees the change
   setTimeout(() => { window.location.href = d.page; }, 300);
+}
+</script>
+<script>
+// Meta Pixel — ViewContent (produkto peržiūra)
+if (window.fbq) {
+  var _pn = document.querySelector('.price-now');
+  var _v = _pn ? parseInt((_pn.textContent || '').replace(/\D/g, ''), 10) : 0;
+  fbq('track', 'ViewContent', { content_name: document.title, content_type: 'product', value: _v || 0, currency: 'EUR' });
 }
 </script>
 </body>
