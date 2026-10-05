@@ -54,7 +54,7 @@ function customerEmailHtml(session, rows) {
       ✔ 30 dienų bandymas namuose<br>
       ✔ 5 metų garantija
     </div>
-    <p style="text-align:center;color:#9c978d;font-size:12px;margin-top:28px;">Klausimai? Rašykite info@ervo.lt arba skambinkite +370 655 77536</p>
+    <p style="text-align:center;color:#9c978d;font-size:12px;margin-top:28px;">Klausimai? Rašykite info@ervo.lt arba skambinkite +370 665 52262</p>
   </div>`;
 }
 
