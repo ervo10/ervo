@@ -452,6 +452,8 @@
   @media (max-width: 1024px) {
     .spotlight-grid { grid-template-columns: 1fr; gap: 40px; }
     .spotlight-media { aspect-ratio: 16/11; max-height: 480px; }
+    /* Telefone įvertinimo žymę perkeliam į apačią, kad neužl[į]tų ant kėdės */
+    .spotlight-rating { top: auto; bottom: 16px; left: 16px; }
     .foot-top { grid-template-columns: 1fr 1fr; gap: 40px; }
   }
   @media (max-width: 820px) {

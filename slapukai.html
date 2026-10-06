@@ -29,7 +29,7 @@
   .legal-toc ol li { font-size: 14px; color: var(--ink); line-height: 1.8; list-style: decimal; }
   .legal-toc ol li a { color: var(--pine); text-decoration: none; }
   .legal-toc ol li a:hover { text-decoration: underline; }
-  .cookie-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
+  .cookie-table { width: 100%; min-width: 440px; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
   .cookie-table th { background: var(--ink); color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 13px; }
   .cookie-table th:first-child { border-radius: 10px 0 0 0; }
   .cookie-table th:last-child { border-radius: 0 10px 0 0; }
@@ -121,7 +121,7 @@ src="https://www.facebook.com/tr?id=1127725572937087&ev=PageView&noscript=1"
       <p><strong>Būtinieji slapukai</strong> <span class="badge-required">Privalomi</span></p>
       <p>Šie slapukai būtini tinkamam svetainės veikimui. Be jų svetainė negalėtų funkcionuoti. Jiems nereikalingas jūsų sutikimas.</p>
 
-      <table class="cookie-table">
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="cookie-table">
         <thead>
           <tr><th>Slapuko pavadinimas</th><th>Paskirtis</th><th>Galiojimas</th></tr>
         </thead>
@@ -130,12 +130,12 @@ src="https://www.facebook.com/tr?id=1127725572937087&ev=PageView&noscript=1"
           <tr><td><code>ervo_session</code></td><td>Sesijos identifikavimas</td><td>Sesija</td></tr>
           <tr><td><code>ervo_cookie_consent</code></td><td>Saugo jūsų slapukų sutikimo pasirinkimą</td><td>12 mėnesių</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <p><strong>Analitiniai slapukai</strong> <span class="badge-analytics">Pagal sutikimą</span></p>
       <p>Šie slapukai padeda mums suprasti, kaip lankytojai naudojasi svetaine - kuriuos puslapius dažniausiai lanko, kiek laiko praleidžia. Informacija renkama anonimiškai ir naudojama tik statistikos tikslais.</p>
 
-      <table class="cookie-table">
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="cookie-table">
         <thead>
           <tr><th>Slapuko pavadinimas</th><th>Paskirtis</th><th>Galiojimas</th></tr>
         </thead>
@@ -144,7 +144,7 @@ src="https://www.facebook.com/tr?id=1127725572937087&ev=PageView&noscript=1"
           <tr><td><code>_ga_*</code></td><td>Google Analytics - sesijų būsenos išsaugojimas</td><td>2 metai</td></tr>
           <tr><td><code>_gid</code></td><td>Google Analytics - lankytojų atskyrimas (24 val.)</td><td>24 val.</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <h2 id="trečiuju-šaliu">3. Trečiųjų šalių slapukai</h2>
       <p>Mūsų svetainėje gali būti naudojami šių trečiųjų šalių slapukai:</p>
