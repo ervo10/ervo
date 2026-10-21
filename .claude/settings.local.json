@@ -30,7 +30,9 @@
       "Bash(perl -0pi -e 's/>~15 min\\\\.</>10–15 min.</g' premium-juoda.html premium-pilka.html)",
       "Bash(perl -0pi -e 's/Surinkimas užtrunka apie 15 minučių/Surinkimas užtrunka apie 10–15 minučių/g' premium-juoda.html premium-pilka.html)",
       "Bash(perl -0pi -e 's/Investicija dešimtmečiui/Ilgalaikė investicija/g' index.html)",
-      "Bash(perl -0pi -e 's/pečiai atsipalaiduoja, kaklo įtampa dingsta/pečiai atsipalaiduoja, mažėja kaklo įtampa/g' index.html)"
+      "Bash(perl -0pi -e 's/pečiai atsipalaiduoja, kaklo įtampa dingsta/pečiai atsipalaiduoja, mažėja kaklo įtampa/g' index.html)",
+      "Bash(perl -CSD -i -pe 's/2\\(\\\\x{2013}|-\\)4\\( darbo| d\\\\.d| D\\\\.D\\)/2${1}5${2}/g' apie-mus.html index.html pirkimo-taisykles.html premium-juoda.html premium-pilka.html pristatymas.html smart.html)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
